@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./UserLinks.css";
+import styled from 'styled-components';
 
 class UserLinks extends Component {
   getLinkElements() {
@@ -16,7 +16,16 @@ class UserLinks extends Component {
     if (!userLinks) {
       return null;
     }
-    return <div className="user-links">{this.getLinkElements()}</div>;
+
+    const Container = styled.div`
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+    `;
+
+    return <Container>{this.getLinkElements()}</Container>;
   }
 }
 
