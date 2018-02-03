@@ -3,10 +3,10 @@ import Helmet from "react-helmet";
 import styled from 'styled-components';
 
 
-import UserInfo from "../components/UserInfo/UserInfo";
-import PostTags from "../components/PostTags/PostTags";
-import SocialLinks from "../components/SocialLinks/SocialLinks";
-import SEO from "../components/SEO/SEO";
+import UserInfo from "../components/elements/userInfo/userInfo";
+import PostTags from "../components/elements/postTags/postTags";
+import SocialLinks from "../components/elements/socialLinks/socialLinks";
+import SEO from "../components/shared/seo/seo";
 import config from "../../data/SiteConfig";
 
 export default class PostTemplate extends React.Component {
