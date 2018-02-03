@@ -1,13 +1,20 @@
 import React from "react";
 import Helmet from "react-helmet";
-import PostListing from "../components/PostListing/PostListing";
-import SEO from "../components/SEO/SEO";
-import Footer from "../components/Footer/Footer";
+import PostListing from "../components/elements/postListing/postListing";
+import SEO from "../components/shared/seo/seo";
+import Footer from "../components/elements/footer/footer";
 import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    const {data} = this.props;
+    console.log('====================================');
+    console.log(this.props);
+    console.log('====================================');
+    const {allMarkdownRemark} = data;
+
+    if( allMarkdownRemark === undefined ) { return null; }
+    const postEdges = allMarkdownRemark.edges;
     return (
       <div className="index-container">
         <Helmet title={config.siteTitle} />

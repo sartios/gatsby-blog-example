@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { ShareButtons, ShareCounts, generateShareIcon } from "react-share";
 import styled from 'styled-components';
 
-import config from "../../../data/SiteConfig";
+import config from "../../../../data/SiteConfig";
 
 
 class SocialLinks extends Component {
