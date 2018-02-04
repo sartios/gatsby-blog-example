@@ -1,5 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
+
+import Navigation from '../components/shared/navigation/navigation';
+import Container from '../components/shared/container/container';
 import config from "../../data/SiteConfig";
 import "./index.css";
 
@@ -46,7 +49,10 @@ export default class MainLayout extends React.Component {
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        {children()}
+        <Navigation />
+        <Container>
+          {children()}
+        </Container>
       </div>
     );
   }
