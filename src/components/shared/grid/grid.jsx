@@ -8,6 +8,8 @@ const formatAreas = areas => areas.map(area => `"${area}"`).join(" ");
  */
 const Grid = (props) => {
   const GridContainer = styled.div`
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-auto-flow: ${props.flow};
   grid-template-columns: ${props.columns};
