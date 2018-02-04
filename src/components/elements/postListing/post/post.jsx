@@ -35,7 +35,7 @@ const Post = props => {
     color: rgba(38,41,58,0.6);
 
     span {
-      margin-left: 24px;
+      margin: 4px 12px 0;
     }
   `
 
@@ -50,6 +50,7 @@ const Post = props => {
         <PostMeta>
           <PostIcon src="http://www.randseay.com/img/backgrounds/bg-react.jpg" />
           <span>{props.data.date}</span>
+          &#9679;
           <span>{props.data.timeToRead} min</span>
         </PostMeta>
         <h2>{props.data.title}</h2>
