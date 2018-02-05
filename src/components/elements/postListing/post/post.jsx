@@ -26,6 +26,12 @@ const Post = props => {
     @media (max-width: 992px) {
       width: 100%;
     }
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
   `
 
   const PostMeta = styled.div`
@@ -41,6 +47,9 @@ const Post = props => {
 
   const PostIcon = styled.img`
     height: 24px;
+    border-style: none;
+    max-width: 100%;
+    box-sizing: border-box;
   `
   
 
@@ -48,7 +57,7 @@ const Post = props => {
     <Container>
       <Link to={props.data.path}>
         <PostMeta>
-          <PostIcon src="http://www.randseay.com/img/backgrounds/bg-react.jpg" />
+          <PostIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1000px-React-icon.svg.png" />
           <span>{props.data.date}</span>
           &#9679;
           <span>{props.data.timeToRead} min</span>
