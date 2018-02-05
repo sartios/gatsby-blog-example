@@ -20,7 +20,7 @@ class Index extends React.Component {
       display: grid;
       width: 100%;
       height: 100%;
-      grid-template-columns: 200px auto;
+      grid-template-columns: 300px auto;
       grid-template-areas: "contact blogs";
       grid-gap: "8px";
 

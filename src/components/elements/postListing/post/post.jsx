@@ -43,21 +43,13 @@ const Post = props => {
     span {
       margin: 4px 12px 0;
     }
-  `
-
-  const PostIcon = styled.img`
-    height: 24px;
-    border-style: none;
-    max-width: 100%;
-    box-sizing: border-box;
-  `
-  
+  `  
 
   return (
     <Container>
       <Link to={props.data.path}>
         <PostMeta>
-          <PostIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1000px-React-icon.svg.png" />
+          <i className="fab fa-react" />
           <span>{props.data.date}</span>
           &#9679;
           <span>{props.data.timeToRead} min</span>
