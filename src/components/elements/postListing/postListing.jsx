@@ -24,7 +24,6 @@ class PostListing extends React.Component {
     const Container = styled.div`
       display: flex;
       flex-wrap: wrap;
-      margin-left: 250px;
 
       @media (max-width: 780px) {
         margin-left: 0;
