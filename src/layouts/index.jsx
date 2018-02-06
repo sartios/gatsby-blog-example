@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 
 import Navigation from '../components/shared/navigation/navigation';
 import Container from '../components/shared/container/container';
+import Footer from '../components/elements/footer/footer';
 import config from "../../data/SiteConfig";
 import "./index.css";
 
@@ -53,6 +54,7 @@ export default class MainLayout extends React.Component {
         <Container>
           {children()}
         </Container>
+        <Footer config={config} />
       </div>
     );
   }

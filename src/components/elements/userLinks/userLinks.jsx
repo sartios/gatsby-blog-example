@@ -4,11 +4,24 @@ import styled from 'styled-components';
 class UserLinks extends Component {
   getLinkElements() {
     const { userLinks } = this.props.config;
-    const { labeled } = this.props;
+
+    const Link = styled.a`
+      color: lightgray;
+      font-size: 20px;
+      text-decoration: none;
+      margin-left: 10px;
+      font-weight: normal;
+      transition: .1s color linear;
+
+      &:hover {
+        color: white;
+      }
+    `
+
     return userLinks.map(link => (
-      <button key={link.label} href={link.url}>
-        {labeled ? link.label : ""}
-      </button>
+      <Link href={link.url} target="_blank">
+        <i className={link.iconClassName} />
+      </Link>
     ));
   }
   render() {

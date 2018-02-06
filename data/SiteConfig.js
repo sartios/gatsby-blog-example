@@ -21,17 +21,17 @@ module.exports = {
     {
       label: "GitHub",
       url: "https://github.com/sartios",
-      iconClassName: "fa fa-github"
+      iconClassName: "fab fa-github"
     },
     {
       label: "Twitter",
       url: "https://twitter.com/sartios7",
-      iconClassName: "fa fa-twitter"
+      iconClassName: "fab fa-twitter"
     },
     {
       label: "Email",
-      url: "mailto:sartios@hotmail.com",
-      iconClassName: "fa fa-envelope"
+      url: "mailto:savramis.sartios@gmail.com",
+      iconClassName: "fas fa-at"
     }
   ],
   copyright: "Copyright © 2017. Sartios", // Copyright string for the footer of the website and RSS feed.

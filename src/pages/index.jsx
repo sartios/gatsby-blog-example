@@ -51,7 +51,6 @@ class Index extends React.Component {
             <PostListing postEdges={postEdges} />
           </Column>
         </Container>
-        <Footer config={config} />
       </div>
     );
   }
