@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import PostListing from "../components/elements/postListing/postListing";
 import Contact from '../components/elements/contact/contact';
 import SEO from "../components/shared/seo/seo";
-import Footer from "../components/elements/footer/footer";
 import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
@@ -28,7 +27,18 @@ class Index extends React.Component {
         grid-template-columns: auto;
         grid-template-areas: "blogs";
       }
-    `
+    `;
+
+    const ContactContainer = styled.div`
+      display: inline-block;
+      position: fixed;
+      height: 100%;
+      max-height: 700px;
+      width: 300px;
+      background-color: white;
+      margin-top: 10px;
+      padding: 10px;
+    `;
 
     const Column = styled.div`
       height: 100%;
@@ -45,7 +55,9 @@ class Index extends React.Component {
         <SEO postEdges={postEdges} />
         <Container>
           <Column name="contact" hideOnMobile>
-            <Contact />
+            <ContactContainer>
+              <Contact />
+            </ContactContainer>
           </Column>
           <Column name="blogs">
             <PostListing postEdges={postEdges} />

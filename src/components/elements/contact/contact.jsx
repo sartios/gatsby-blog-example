@@ -2,20 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Contact = props => {
-  const Container = styled.div`
-    display: inline-block;
-    position: fixed;
-    height: 100%;
-    max-height: 700px;
-    width: 300px;
-    background-color: white;
-    margin-top: 10px;
-    padding: 10px;
-  `;
-
   const Grid = styled.div`
     display: grid;
     height: 100%;
+    background-color: white;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
       "row-1",
@@ -104,28 +94,26 @@ const Contact = props => {
   `
 
   return (
-    <Container>
-      <Grid>
-        <IntroSection>
-          <ContactImage src="https://semantic-ui.com/images/wireframe/image.png" />
-          <span>Sartios</span>
-          <span>Software Developer</span>
-        </IntroSection>
-        <ContactSection>
-          <ContactButton><Icon color="white" className="fas fa-comment" />Contact Me</ContactButton>
-          <GithubContact>
-            <Icon className="fab fa-github" />
-            <GithubLink href="https://www.github.com/sartios" target="_blank">github.com/sartios</GithubLink>
-          </GithubContact>
-        </ContactSection>
-        <InfoSection>
-          <InfoMeta><Icon className="far fa-envelope" />savramis.sartios@gmail.com</InfoMeta>
-          <InfoMeta><Icon className="fab fa-linkedin-in" />linkedin.com/sartios</InfoMeta>
-          <InfoMeta><Icon className="far fa-building" />web developer @ordereze</InfoMeta>
-          <InfoMeta><Icon className="far fa-compass" />thessaloniki, greece</InfoMeta>
-        </InfoSection>
-      </Grid>
-    </Container>
+    <Grid>
+      <IntroSection>
+        <ContactImage src="https://semantic-ui.com/images/wireframe/image.png" />
+        <span>Sartios</span>
+        <span>Software Developer</span>
+      </IntroSection>
+      <ContactSection>
+        <ContactButton><Icon color="white" className="fas fa-comment" />Contact Me</ContactButton>
+        <GithubContact>
+          <Icon className="fab fa-github" />
+          <GithubLink href="https://www.github.com/sartios" target="_blank">github.com/sartios</GithubLink>
+        </GithubContact>
+      </ContactSection>
+      <InfoSection>
+        <InfoMeta><Icon className="far fa-envelope" />savramis.sartios@gmail.com</InfoMeta>
+        <InfoMeta><Icon className="fab fa-linkedin-in" />linkedin.com/sartios</InfoMeta>
+        <InfoMeta><Icon className="far fa-building" />web developer @ordereze</InfoMeta>
+        <InfoMeta><Icon className="far fa-compass" />thessaloniki, greece</InfoMeta>
+      </InfoSection>
+    </Grid>
   );
 }
 
