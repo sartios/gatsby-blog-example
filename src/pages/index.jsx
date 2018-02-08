@@ -1,9 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
-import styled from 'styled-components';
 
-import PostListing from "../components/elements/postListing/postListing";
-import Contact from '../components/elements/contact/contact';
+import MainScreen from '../screens/main/mainScreen';
 import SEO from "../components/shared/seo/seo";
 import config from "../../data/SiteConfig";
 
@@ -15,54 +13,11 @@ class Index extends React.Component {
     if( allMarkdownRemark === undefined ) { return null; }
     const postEdges = allMarkdownRemark.edges;
 
-    const Container = styled.div`
-      display: grid;
-      width: 100%;
-      height: 100%;
-      grid-template-columns: 300px auto;
-      grid-template-areas: "contact blogs";
-      grid-gap: "8px";
-
-      @media (max-width: 768px) {
-        grid-template-columns: auto;
-        grid-template-areas: "blogs";
-      }
-    `;
-
-    const ContactContainer = styled.div`
-      display: inline-block;
-      position: fixed;
-      height: 100%;
-      max-height: 700px;
-      width: 300px;
-      background-color: white;
-      margin-top: 10px;
-      padding: 10px;
-    `;
-
-    const Column = styled.div`
-      height: 100%;
-      grid-area: ${props => props.name};
-
-      @media (max-width: 768px) {
-        display: ${props => (props.hideOnMobile ? 'none': 'block')}
-      }
-    `
-
     return (
       <div className="index-container">
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
-        <Container>
-          <Column name="contact" hideOnMobile>
-            <ContactContainer>
-              <Contact />
-            </ContactContainer>
-          </Column>
-          <Column name="blogs">
-            <PostListing postEdges={postEdges} />
-          </Column>
-        </Container>
+        <MainScreen postEdges={postEdges} />
       </div>
     );
   }
