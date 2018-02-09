@@ -10,8 +10,9 @@ class About extends Component {
       align-content: center;
       align-items: flex-start;
       height: auto;
-      min-height: 300px;
+      min-height: 600px;
       margin-left: 25px;
+      max-width: 700px;
 
       @media (max-width: 768px) {
         margin-top: 25px;
@@ -21,8 +22,12 @@ class About extends Component {
 
     const SubContainer = styled.div`
       width: 100%;
+      max-width: 300px;
       height: auto;
       padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     `;
 
     const Item = styled.div`
@@ -40,7 +45,7 @@ class About extends Component {
           <Item>
             <div>Front End Developer</div>
             <div>2017 - Present</div>
-            <div>ordereze</div>
+            <div>Ordereze</div>
           </Item>
           <Item>
             <div>Full Stack Developer</div>
