@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import MainScreen from '../screens/main/mainScreen';
+import BlogsScreen from '../screens/blogs/blogsScreen';
 import SEO from "../components/shared/seo/seo";
 import config from "../../data/SiteConfig";
 
@@ -17,7 +17,7 @@ class Index extends React.Component {
       <div className="index-container">
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
-        <MainScreen postEdges={postEdges} />
+        <BlogsScreen postEdges={postEdges} />
       </div>
     );
   }

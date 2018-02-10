@@ -7,7 +7,10 @@ import ContactContainer from './components/contactContainer/contactContainer';
 import Contact from '../../components/elements/contact/contact';
 import PostListing from '../../components/elements/postListing/postListing';
 
-const MainScreen = (props) => (
+/**
+ * Blogs screen component.
+ */
+const BlogsScreen = (props) => (
   <Container>
     <Grid>
       <Column name="contact" hideOnMobile>
@@ -24,13 +27,13 @@ const MainScreen = (props) => (
 
   const { array } = React.PropTypes;
 
-  MainScreen.propTypes = {
+  BlogsScreen.propTypes = {
     postEdges: array
   }
 
-  MainScreen.defaultProps = {
+  BlogsScreen.defaultProps = {
     postEdges: []
   }
 
-export default MainScreen;
+export default BlogsScreen;
 
