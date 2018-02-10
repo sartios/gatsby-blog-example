@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Container from './components/container/container';
+import Container from '../../components/shared/container';
 import Grid from './components/grid/grid';
 import Column from './components/column/column';
 import About from './components/about/about';
