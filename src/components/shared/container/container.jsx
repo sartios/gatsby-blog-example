@@ -21,6 +21,11 @@ const Container = props => {
     @media (max-width: 768px) {
       max-width: 750px;
     }
+
+    @media (max-width: 480px) {
+      margin-top: 60px;
+      padding: 0;
+    }
   `;
 
   return (

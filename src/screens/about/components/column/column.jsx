@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const Column = props => {
   const ColumnWrapper = styled.div`
     height: 100%;
-    grid-area: ${() => props.name}
+    grid-area: ${() => props.name};
   `
 
   return (

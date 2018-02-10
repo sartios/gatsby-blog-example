@@ -6,17 +6,15 @@ class About extends Component {
     const Container = styled.div`
       display: flex;
       background-color: white;
-      justify-content: center;
+      justify-content: space-around;
       align-content: center;
       align-items: flex-start;
       height: auto;
       min-height: 600px;
-      margin-left: 25px;
-      max-width: 700px;
 
       @media (max-width: 768px) {
-        margin-top: 25px;
-        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
       }
     `;
 
@@ -28,6 +26,7 @@ class About extends Component {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      align-items: center;
     `;
 
     const Item = styled.div`

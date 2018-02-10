@@ -9,16 +9,23 @@ const Grid = props => {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: 300px 750px 300px;
-    grid-template-areas: contact about skills;
-    justify-content: center;
-    grid-gap: "8px";
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: "contact about skills";
+    grid-gap: 8px 8px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 40% 60%;
+      grid-gap: 8px 8px;
+      grid-template-areas:
+        "contact about"
+        "skills skills"
+    }
 
     @media (max-width: 768px) {
-      grid-template-columns: auto;
+      grid-template-columns: 100%;
       grid-template-areas:
-        "contact",
-        "about",
+        "contact"
+        "about"
         "skills"
     }
   `;
