@@ -5,13 +5,18 @@ import styled from 'styled-components';
  * Column component for the main screen.
  */
 const Column = props => {
-  const ColumnWrapper = styled.div`
+  const ColumnWrapper =props.hideOnMobile
+  ? styled.div`
     height: 100%;
     grid-area: ${() => props.name}
 
     @media (max-width: 768px) {
-      display: ${() => (props.hideOnMobile ? 'none': 'block')}
+      display: 'none'
     }
+  `
+  : styled.div`
+    height: 100%;
+    grid-area: ${() => props.name}
   `
 
   return (
