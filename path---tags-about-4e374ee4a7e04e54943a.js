@@ -1,0 +1,2 @@
+webpackJsonp([0x74d34a925318],{445:function(t,e){t.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/about-me"},excerpt:"Hanc indeploratum seram Amphitryoniadae tremulis pauperque manum Cognoscenti audeat ulterius sublimia terga potiorque saxo Lorem markdownum…",timeToRead:1,frontmatter:{title:"About Me",tags:["about"],cover:"https://unsplash.it/1152/300/?random?TheButterflyoftheEdge",date:"17/03/2017"}}}]}},pathContext:{tag:"about"}}}});
+//# sourceMappingURL=path---tags-about-4e374ee4a7e04e54943a.js.map
