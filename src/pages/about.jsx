@@ -9,10 +9,19 @@ class AboutPage extends Component {
     return (
       <div className="index-container">
         <Helmet title={config.siteTitle} />
-        <AboutScreen />
+        <AboutScreen post={this.props.data.markdownRemark} />
       </div>
     );
   }
 }
 
 export default AboutPage;
+
+/* eslint no-undef: "off"*/
+export const AboutQuery = graphql`
+  query AboutQuery {
+    markdownRemark(fields: { slug: { eq: "/about-me"}}) {
+      html
+      }
+  }
+`;

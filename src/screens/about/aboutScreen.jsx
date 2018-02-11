@@ -7,14 +7,14 @@ import About from './components/about/about';
 import Skills from './components/skills/skills';
 import Contact from '../../components/elements/contact/contact';
 
-const AboutScreen = () => (
+const AboutScreen = (props) => (
   <Container>
     <Grid>
       <Column name="contact">
         <Contact />
       </Column>
       <Column name="about">
-        <About />
+        <About content={props.post} />
       </Column>
       <Column name="skills">
         <Skills />
