@@ -11,7 +11,7 @@ tags:
 
 # Introduction to React
 
-React is a JavaScript library for creating user interfaces with datasets that change over time. The basic React Concepts are Components and Virtual DOM.
+React is a JavaScript library for creating user interfaces with datasets that change over time. The basic React concepts are Components and Virtual DOM.
 
 ## Components
 
@@ -38,7 +38,7 @@ Class Components can maintain internally a set of properties called state. The s
 5. State should not contain computed data, other React components, or duplicated date from props.
 6. State should only contain the minimal amount of data needed to represent your UI's state.
 
-Functional Component
+__Functional Component__
 
 ``` javascript
   import React from 'react';
@@ -68,7 +68,7 @@ Functional Component
   <MyComponent message="Hello" count="World" />
 ```
 
-Class Component
+__Class Component__
 
 ``` javascript
   import React from 'react';
@@ -126,13 +126,11 @@ Workflow Overview:
 3. The changed objects, and the changed objects only, get updated on the real DOM.
 4. Changes on the real DOM cause the screen to change.
 
-## State Management
-
 ## React Renderers
 
 React is decoupled from the web. You can used it to implement interfaces across multiple platforms. The most common renderer is known as <a href="https://www.npmjs.com/package/react-dom">react-dom</a> and it supports both client and server side rendering.
 
-Render in the browser
+__Render in the browser__
 
 ```` javascript
 import React from 'react';
@@ -148,7 +146,7 @@ ReactDOM.render(<MyComponent />, node);
 
 ````
 
-Render on the server
+__Render on the server__
 
 ```` javascript
 import React from 'react';
