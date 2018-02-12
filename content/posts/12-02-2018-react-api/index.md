@@ -1,12 +1,12 @@
 ---
-title: "Bold Mage"
+title: "React API"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
-date: "01/01/2017"
-category: "tech"
+date: "12-02-2018"
+category: "front-end"
 tags:
     - programming
-    - stuff
-    - other
+    - front-end
+    - react
 ---
 # Quanto et ius coniunctis urbes
 

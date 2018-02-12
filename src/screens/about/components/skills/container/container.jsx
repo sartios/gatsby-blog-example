@@ -21,6 +21,7 @@ const Container = props => {
 
     @media (max-width: 992px) {
       position: relative;
+      top: 0;
       min-height: 600px;
       max-width: 100%;
     }
