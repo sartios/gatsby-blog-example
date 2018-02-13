@@ -108,6 +108,7 @@ The ``componentDidMount()`` method is invoked immediately after a component is m
 
 * Setup subscriptions.
 * Load data from a remote endpoint.
+* Initialize third party libraries.
 
 Notice that calling ``setState()`` in this method will trigger an extra rendering, but it will happen before the browser updates the screen, thus the user won't see the intermediate state.
 
