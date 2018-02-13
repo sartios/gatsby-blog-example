@@ -1,0 +1,2 @@
+webpackJsonp([0x74d34a925318],{421:function(e,t){e.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/about-me"},excerpt:"A little about me I'm Sartios, a 29 year old software developer from Greece. Building software is my passion and profession. So far I have…",timeToRead:1,frontmatter:{title:"About Me",tags:["about"],cover:null,date:"11/02/2018"}}}]}},pathContext:{tag:"about"}}}});
+//# sourceMappingURL=path---tags-about-c725ad5da8a64a14c70a.js.map
