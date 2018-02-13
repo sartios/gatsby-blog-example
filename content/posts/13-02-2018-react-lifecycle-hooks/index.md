@@ -1,7 +1,7 @@
 ---
 title: "React Lifecycle Hooks"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
-date: "12-02-2018"
+date: "13-02-2018"
 category: "front-end"
 tags:
     - programming
