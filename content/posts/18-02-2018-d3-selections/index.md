@@ -91,28 +91,28 @@ D3 provides methods to select DOM elements in order to do something with them. T
 Selecting a circle by its tag name:
 
 ```javascript
-  /**
-   * Construct a selection for the first circle.
-   */
-  const circle = d3.select('circle');
+/**
+ * Construct a selection for the first circle.
+ */
+const circle = d3.select('circle');
 ```
 
 Selecting a circle by its class name:
 
 ```javascript
-  /**
-   * Construct a selection for the first circle.
-   */
-  const circle = d3.select('.svg-circle');
+/**
+ * Construct a selection for the first circle.
+ */
+const circle = d3.select('.svg-circle');
 ```
 
 Selecting a circle by its id:
 
 ```javascript
-  /**
-   * Construct a selection for the first circle.
-   */
-  const circle = d3.select('#circle1');
+/**
+ * Construct a selection for the first circle.
+ */
+const circle = d3.select('#circle1');
 ```
 
 ### Select elements by CSS selector
@@ -128,28 +128,28 @@ Selecting a circle by its id:
 Selecting the circles by the tag name:
 
 ```javascript
-  /**
-   * Construct a selection for the circles.
-   */
-  const circles = d3.selectAll('circle');
+/**
+ * Construct a selection for the circles.
+ */
+const circles = d3.selectAll('circle');
 ```
 
 Selecting the circles by the class name:
 
 ```javascript
-  /**
-   * Construct a selection for the circles.
-   */
-  const circles = d3.selectAll('.svg-circle');
+/**
+ * Construct a selection for the circles.
+ */
+const circles = d3.selectAll('.svg-circle');
 ```
 
 Selecting the circles by id:
 
 ```javascript
-  /**
-   * Construct a selection array with first circle as child.
-   */
-  const circles = d3.selectAll('#circle1');
+/**
+ * Construct a selection array with first circle as child.
+ */
+const circles = d3.selectAll('#circle1');
 ```
 
 ### Select nesting elements
@@ -168,10 +168,10 @@ Selecting the circles by id:
 ````
 
 ```javascript
-  /**
-   * Construct a selection for the circles in the 1st group.
-   */
-  const group1Circles = d3.select('.group-1').selectAll('circles');
+/**
+ * Construct a selection for the circles in the 1st group.
+ */
+const group1Circles = d3.select('.group-1').selectAll('circles');
 ```
 
 ### Select non-existing elements
@@ -187,10 +187,10 @@ The selection will return an array with representations for the elements, in ord
 ````
 
 ```javascript
-  /**
-   * An array of representations for the rects.
-   */
-  const rects = d3.selectAll('rect');
+/**
+ * An array of representations for the rects.
+ */
+const rects = d3.selectAll('rect');
 ```
 
 ## Summary

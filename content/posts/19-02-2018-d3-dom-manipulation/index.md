@@ -141,11 +141,11 @@ D3 provides methods to manipulate DOM elements in a selection. In order to apply
 ````
 
 ```javascript
-  /**
-   * Modify the text content.
-  */
-  d3.select('text')
-    .text('Hello World');
+/**
+ * Modify the text content.
+ */
+d3.select('text')
+  .text('Hello World');
 ```
 
 ### Add a new DOM element at the end
@@ -157,12 +157,12 @@ D3 provides methods to manipulate DOM elements in a selection. In order to apply
 ````
 
 ```javascript
-  /**
-   * Append a new element inside group.
-  */
-  d3.select('.group')
-    .append('text')
-    .text('Hello World');
+/**
+ * Append a new element inside group.
+ */
+d3.select('.group')
+  .append('text')
+  .text('Hello World');
 ```
 
 Final markup:
@@ -184,12 +184,12 @@ Final markup:
 ````
 
 ```javascript
-  /**
-   * Insert a new element inside group.
-  */
-  d3.select('.group')
-    .insert('text')
-    .text('Hello World');
+/**
+ * Insert a new element inside group.
+ */
+d3.select('.group')
+  .insert('text')
+  .text('Hello World');
 ```
 
 Final markup:
@@ -217,11 +217,11 @@ Final markup:
 ````
 
 ```javascript
-  /**
-   * Remove the .group g.
-  */
-  d3.select('.group')
-    .remove();
+/**
+ * Remove the .group g.
+ */
+d3.select('.group')
+  .remove();
 ```
 
 Final markup:
@@ -243,12 +243,12 @@ Final markup:
 ````
 
 ```javascript
-  /**
-   * Set the inner HTML of the tooltip.
-  */
-  d3.select('body')
-    .select('#tooltip')
-    .html('<div>ToolTip Message</div>');
+/**
+ * Set the inner HTML of the tooltip.
+ */
+d3.select('body')
+  .select('#tooltip')
+  .html('<div>ToolTip Message</div>');
 ```
 
 Final markup:
@@ -271,13 +271,13 @@ Final markup:
 ````
 
 ```javascript
-  /**
-   * Append a rect and set its width and height.
-  */
-  d3.select('.group')
-    .append('rect')
-    .attr('width', 300)
-    .attr('height', 100);
+/**
+ * Append a rect and set its width and height.
+ */
+d3.select('.group')
+  .append('rect')
+  .attr('width', 300)
+  .attr('height', 100);
 ```
 
 Final markup:
@@ -301,11 +301,11 @@ Final markup:
 ````
 
 ```javascript
-  /**
-   * Sets the checked property of #terms.
-  */
-  d3.select('#terms')
-    .property('checked', true);
+/**
+ * Sets the checked property of #terms.
+ */
+d3.select('#terms')
+  .property('checked', true);
 ```
 
 ### Apply styles to selected DOM elements.
@@ -313,20 +313,20 @@ Final markup:
 ````html
 <svg width="500" height="500">
   <g class="bars">
-    <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-    <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-    <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    <rect width="300" height="100" style="fill:rgb(0,0,255);" />
+    <rect width="300" height="100" style="fill:rgb(0,0,255);" />
+    <rect width="300" height="100" style="fill:rgb(0,0,255);" />
   </g>
 </svg>
 ````
 
 ```javascript
-  /**
-   * Change the opacity of bars.
-  */
-  d3.select('.bars')
-    .selectAll('rect')
-    .style('opacity', 0.5)
+/**
+ * Change the opacity of bars.
+ */
+d3.select('.bars')
+  .selectAll('rect')
+  .style('opacity', 0.5)
 ```
 
 ### Set the classList
@@ -334,20 +334,20 @@ Final markup:
 ````html
 <svg width="500" height="500">
   <g class="bars">
-    <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-    <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-    <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    <rect width="300" height="100" style="fill:rgb(0,0,255);" />
+    <rect width="300" height="100" style="fill:rgb(0,0,255);" />
+    <rect width="300" height="100" style="fill:rgb(0,0,255);" />
   </g>
 </svg>
 ````
 
 ```javascript
-  /**
-   * Change the opacity of bars.
-  */
-  d3.select('.bars')
-    .selectAll('rect')
-    .classed('bar', true);
+/**
+ * Change the opacity of bars.
+ */
+d3.select('.bars')
+  .selectAll('rect')
+  .classed('bar', true);
 ```
 
 Final markup:
@@ -355,9 +355,9 @@ Final markup:
 ````html
 <svg width="500" height="500">
   <g class="bars">
-    <rect class="bar" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-    <rect class="bar" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-    <rect class="bar" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    <rect class="bar" width="300" height="100" style="fill:rgb(0,0,255);" />
+    <rect class="bar" width="300" height="100" style="fill:rgb(0,0,255);" />
+    <rect class="bar" width="300" height="100" style="fill:rgb(0,0,255);" />
   </g>
 </svg>
 ````

@@ -9,6 +9,8 @@ import SocialLinks from "../components/elements/socialLinks/socialLinks";
 import SEO from "../components/shared/seo/seo";
 import config from "../../data/SiteConfig";
 
+import './post.css';
+
 export default class PostTemplate extends React.Component {
   render() {
     const { slug } = this.props.pathContext;

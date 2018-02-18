@@ -29,13 +29,13 @@ The ``constructor()`` method is invoked before it is mounted. When implementing 
 * Bind event handlers, ``this.handleOnClick = this.handleOnClick.bind(this);``.
 
 ```javascript
-  constructor(props){
-    super(props);
+constructor(props){
+  super(props);
 
-    this.state = { /*Initialize your state properties.*/}
+  this.state = { /*Initialize your state properties.*/}
 
-    this.handleOnClick = this.handleOnClick.bind(this);
-  }
+  this.handleOnClick = this.handleOnClick.bind(this);
+}
 ```
 
 #### componentWillMount()
@@ -59,46 +59,46 @@ The render method should be pure, it does not modify component state.
 
 __single element__
 
-```javascript
-  render() {
-    return (<div>Hello World</div>);
-  }
+```jsx
+render() {
+  return (<div>Hello World</div>);
+}
 ```
 
 __array of elements__
 
-```javascript
-  render() {
-    return (
-      [
-        <li key="A">Item 1</li>
-        <li key="B">Item 2</li>
-        <li key="C">Item 3</li>
-      ]
-    );
-  }
+```jsx
+render() {
+  return (
+    [
+      <li key="A">Item 1</li>
+      <li key="B">Item 2</li>
+      <li key="C">Item 3</li>
+    ]
+  );
+}
 ```
 
 __strings__
 
 ```javascript
-  render() {
-    return 'Hello world, no spans!';
-  }
+render() {
+  return 'Hello world, no spans!';
+}
 ```
 
 __fragment__
 
-```javascript
-  render() {
-    return (
-      <React.Fragment>
-        <li key="A">Item 1</li>
-        <li key="B">Item 2</li>
-        <li key="C">Item 3</li>
-      </React.Fragment>
-    )
-  }
+```jsx
+render() {
+  return (
+    <React.Fragment>
+      <li key="A">Item 1</li>
+      <li key="B">Item 2</li>
+      <li key="C">Item 3</li>
+    </React.Fragment>
+  )
+}
 ```
 
 
@@ -126,16 +126,16 @@ The ``componentWillReceiveProps()`` method is invoked when a component is receiv
 Make sure to check if the properties indeed changed.
 
 ```javascript
-  componentWillReceiveProps(newProps) {
-    /**
-     * Check if the name has changed. 
-     */
-    if(this.props.name !== newProps.name) {
-      this.setState({
-        name: this.props.name
-      });
-    }
+componentWillReceiveProps(newProps) {
+  /**
+   * Check if the name has changed. 
+   */
+  if(this.props.name !== newProps.name) {
+    this.setState({
+      name: this.props.name
+    });
   }
+}
 ```
 
 

@@ -140,7 +140,7 @@ The challenge of integrating D3 with React is that both want to control the DOM.
 
 One way is to use React to build the DOM structure and pass the DOM container to D3 and use D3 to create, update and destroy elements.
 
-```javascript
+```jsx
 class BarChart extends React.Component {
 
   componentDidMount() {
@@ -168,7 +168,7 @@ class BarChart extends React.Component {
 
 Another technique is to use D3 as the visualization kernel and use React to create the actual DOM elements. There are challenges with this approach in creating animated transitions and draggable elements using D3 methods.
 
-```javascript
+```jsx
 class BarChart extends React.Component {
   getBars() {
     // Use D3 code to generate rects for the bars

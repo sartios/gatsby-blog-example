@@ -40,75 +40,75 @@ Class Components can maintain internally a set of properties called state. The s
 
 __Functional Component__
 
-``` javascript
-  import React from 'react';
-  import PropTypes from 'prop-types';
+```jsx
+import React from 'react';
+import PropTypes from 'prop-types';
 
-  const MyComponent = props => (
-    <div>
-      Hello World
-      {`The message prop is: ${prop.message} and the count prop is ${prop.count}`}
-    </div>);
+const MyComponent = props => (
+  <div>
+    Hello World
+    {`The message prop is: ${props.message} and the count prop is ${props.count}`}
+  </div>);
 
-  MyComponent.propTypes = {
-    /**
-     * A message prop.
-     */
-    message: PropTypes.string,
-    /**
-     * A count prop.
-     */
-    count: PropTypes.number.isRequired
-  }
+MyComponent.propTypes = {
+  /**
+   * A message prop.
+   */
+  message: PropTypes.string,
+  /**
+   * A count prop.
+   */
+  count: PropTypes.number.isRequired
+}
 
-  MyComponent.defaultProps = {
-    message: 'default prop value'
-  }
+MyComponent.defaultProps = {
+  message: 'default prop value'
+}
 
-  <MyComponent message="Hello" count="World" />
+<MyComponent message="Hello" count="World" />
 ```
 
 __Class Component__
 
-``` javascript
-  import React from 'react';
-  import PropTypes from 'prop-types';
+```jsx
+import React from 'react';
+import PropTypes from 'prop-types';
 
-  class MyComponent extends React.Component {
-    constructor(props) {
-      super(props);
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
 
-      this.state = {
-        message: 'Hello World',
-        count: 0
-      }
-    }
-
-    render() {
-      return (
-        <div>
-          Hello world,
-          {`The message prop is: ${this.prop.message} and the count prop is ${this.prop.count}.`}
-          {`The message state is: ${this.state.message} and the count state is ${this.state.count}.`}
-        </div>
-      )
+    this.state = {
+      message: 'Hello World',
+      count: 0
     }
   }
 
-  MyComponent.propTypes = {
-    /**
-     * A message prop.
-     */
-    message: PropTypes.string,
-    /**
-     * A count prop.
-     */
-    count: PropTypes.number.isRequired
+  render() {
+    return (
+      <div>
+        Hello world,
+        {`The message prop is: ${this.props.message} and the count prop is ${this.props.count}.`}
+        {`The message state is: ${this.state.message} and the count state is ${this.state.count}.`}
+      </div>
+    )
   }
+}
 
-  MyComponent.defaultProps = {
-    message: 'default prop value'
-  }
+MyComponent.propTypes = {
+  /**
+   * A message prop.
+   */
+  message: PropTypes.string,
+  /**
+   * A count prop.
+   */
+  count: PropTypes.number.isRequired
+}
+
+MyComponent.defaultProps = {
+  message: 'default prop value'
+}
 ```
 
 ## Virtual DOM
@@ -132,7 +132,7 @@ React is decoupled from the web. You can used it to implement interfaces across 
 
 __Render in the browser__
 
-```` javascript
+````jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -148,7 +148,7 @@ ReactDOM.render(<MyComponent />, node);
 
 __Render on the server__
 
-```` javascript
+````jsx
 import React from 'react';
 import ReactDOMServer from 'react-dom';
 

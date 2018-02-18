@@ -1,0 +1,141 @@
+pre.language-html,
+pre.language-javascript,
+pre.language-jsx {
+  color: white;
+  background-color: #26293a;
+  padding: 50px;
+  text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+code {
+  background-color: whitesmoke;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/**
+ * HTML Code Styles 
+ */
+pre.language-html code {
+  color: #C8C8C8;
+  background-color: inherit;
+}
+
+pre.language-html span.token.tag {
+  color: #E06C75;
+}
+
+pre.language-html span.token.punctuation {
+  color: #C8C8C8;
+}
+
+pre.language-html span.token.attr-name {
+  color: #D19A66;
+}
+
+pre.language-html span.token.attr-value {
+  color: #98C378;
+}
+
+/**
+ * JavaScript Code Styles 
+ */
+
+pre.language-javascript code {
+  color: #E06C75;
+  background-color: inherit;
+}
+
+pre.language-javascript span.token.comment {
+  color: #7F848E;
+}
+
+pre.language-javascript span.token.function {
+  color: #61AFEF;
+}
+
+pre.language-javascript span.token.punctuation {
+  color: #BBBBBB;
+}
+
+pre.language-javascript span.token.string {
+  color: #98C378;
+}
+
+pre.language-javascript span.token.number {
+  color: #E5C07B;
+}
+
+pre.language-javascript span.token.keyword {
+  color: #C678DD;
+}
+
+pre.language-javascript span.token.class-name {
+  color: #D19A66;
+}
+
+/**
+ * JSX Code Styles 
+ */
+
+pre.language-jsx code {
+  color: #E06C75;
+  background-color: inherit;
+}
+
+pre.language-jsx span.token.comment {
+  color: #7F848E;
+}
+
+pre.language-jsx span.token.function {
+  color: #61AFEF;
+}
+
+pre.language-jsx span.token.punctuation {
+  color: #BBBBBB;
+}
+
+pre.language-jsx span.token.string {
+  color: #98C378;
+}
+
+pre.language-jsx span.token.number {
+  color: #E5C07B;
+}
+
+pre.language-jsx span.token.keyword {
+  color: #C678DD;
+}
+
+pre.language-jsx span.token.class-name {
+  color: #D19A66;
+}
+
+pre.language-jsx span.token.tag {
+  color: #E06C75;
+}
+
+pre.language-jsx span.token.punctuation {
+  color: #C8C8C8;
+}
+
+pre.language-jsx span.token.attr-name {
+  color: #D19A66;
+}
+
+pre.language-jsx span.token.attr-value {
+  color: #98C378;
+}
+
+pre.language-jsx span.token.number {
+  color: #98C378;
+}
+
+pre.language-jsx .language-javascript span.token.operator {
+  color: #C678DD;
+}
+
+pre.language-jsx .language-javascript span.token.punctuation {
+  color: #BBBBBB;
+}
