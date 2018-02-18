@@ -6,12 +6,27 @@ pre.language-jsx {
   padding: 50px;
   text-size-adjust: 100%;
   font-size: 16px;
+  white-space: pre-wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  pre.language-html,
+  pre.language-javascript,
+  pre.language-jsx {
+    padding: 50px 18px;
+  }
+
+  span {
+    overflow-wrap: break-word;
+  } 
 }
 
 code {
   background-color: whitesmoke;
   padding-left: 2px;
   padding-right: 2px;
+  display: inline-block;
+  width: 100%;
 }
 
 /**
