@@ -1,7 +1,7 @@
 ---
 title: "D3 Introduction"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
-date: "17-02-2018"
+date: "18-02-2018"
 category: "front-end"
 tags:
     - programming
@@ -32,17 +32,24 @@ However, using standard charts does not always fullfil your needs in an advanced
 
   .api-item {
     padding: 30px;
-    width: 20%;
-    height: 150px;
+    width: 30%;
+    min-height: 150px;
     margin-top: 5px;
     border: 1px solid lightgray;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 1.3em;
   }
 
   .api-description {
     padding-top: 15px;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 0.7em;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .api-item {
+      width: 45%;
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -53,6 +60,12 @@ However, using standard charts does not always fullfil your needs in an advanced
 
     .api-item {
       width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .api-item {
+      width: 80%;
     }
   }
 </style>
