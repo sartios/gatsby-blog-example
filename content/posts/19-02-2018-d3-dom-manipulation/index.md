@@ -1,5 +1,5 @@
 ---
-title: "D3 - DOM Manipulation"
+title: "D3 DOM Manipulation"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "19-02-2018"
 category: "front-end"
