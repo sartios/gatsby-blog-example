@@ -1,21 +1,13 @@
 import React from 'react';
 
-import Container from '../../components/shared/container';
-import Grid from './components/grid/grid';
-import Column from './components/column/column';
+import Container from './components/container';
 import About from './components/about/about';
 import Skills from './components/skills/skills';
 
 const AboutScreen = (props) => (
   <Container>
-    <Grid>
-      <Column name="about">
-        <About content={props.post} />
-      </Column>
-      <Column name="skills">
-        <Skills />
-      </Column>
-    </Grid>
+    <About content={props.post} />
+    <Skills />
   </Container>
 )
 

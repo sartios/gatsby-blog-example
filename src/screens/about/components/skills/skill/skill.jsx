@@ -8,14 +8,17 @@ const Skill = props => {
   const SkillWrapper = styled.div`
     display: flex;
     justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
   `;
 
   const IconWrapper = styled.span`
-    color: #90EE09;
+    color: #1ABC9C;
   `;
 
   const MiscIconWrapper = styled.span`
-    color: orange;
+    color: #8E44Ad;
   `
 
   if( props.misc ) {

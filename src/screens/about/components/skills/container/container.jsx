@@ -6,23 +6,17 @@ import styled from 'styled-components';
  */
 const Container = props => {
   const ContainerWrapper = styled.div`
-    width: 100%;
-    max-width: 300px;
-    background-color: #3F4548;
-    color: #D3D3D3;
-    position: fixed;
-    top: 50px;
-    right: 0;
+    width: 500px;
+    background-color: #2C3E50;
+    color: #BDC3C7;
     height: 100%;
-
-    @media (max-width: 1200px) {
-      max-width: 230px;
-    }
+    min-height: 800px;
+    padding: 80px 30px;
 
     @media (max-width: 992px) {
-      position: relative;
-      min-height: 600px;
       max-width: 100%;
+      width: 100%;
+      margin-top: 18px;
     }
   `;
 

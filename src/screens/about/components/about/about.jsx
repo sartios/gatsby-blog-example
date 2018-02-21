@@ -8,6 +8,7 @@ class About extends Component {
       height: auto;
       min-height: 600px;
       padding: 30px 150px 30px 30px;
+      max-width: 992px;
     `;
 
     const TextPlaceholder = styled.div`
