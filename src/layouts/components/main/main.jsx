@@ -8,6 +8,14 @@ const Main = props => {
   const MainArea = styled.section`
     background-color: #8E44Ad;
     grid-area: main;
+
+    @media (max-width: 768px) {
+      padding-bottom: 120px;
+    }
+
+    @media (max-width: 480px) {
+      padding-bottom: 70px;
+    }
   `
 
   return (

@@ -7,9 +7,6 @@ import Header from './components/header/header';
 import Grid from './components/grid/grid';
 import Main from './components/main/main';
 
-// import Navigation from '../components/shared/navigation';
-// import Container from '../components/shared/container/container';
-// import Footer from '../components/elements/footer/footer';
 import config from "../../data/SiteConfig";
 import "./index.css";
 
@@ -61,13 +58,10 @@ export default class MainLayout extends React.Component {
         <Grid>
           <Header />
           <Sidebar />
-          <Main />
+          <Main>
+            {children()}
+          </Main>
         </Grid>
-        {/* <Navigation />
-        <Container>
-          {children()}
-        </Container>
-        <Footer config={config} /> */}
       </Container>
     );
   }
