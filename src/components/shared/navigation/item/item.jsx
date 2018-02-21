@@ -13,6 +13,7 @@ const Item = props => {
     color: ${color};
     text-align: center;
     text-transform: capitalize;
+    font-size: 24px;
 
     &:hover,
     &:focus {
@@ -26,6 +27,7 @@ const Item = props => {
       padding-left: 24px;
       padding-right: 24px;
       background-color: ${bgColor};
+      font-size: 18px;
      
       &:hover,
       &:focus {
