@@ -18,10 +18,14 @@ const Sidebar = props => {
       width: 100%;
       bottom: 0;
       height: 100px;
+      line-height: 100px;
+      padding-top: 0;
+      vertical-align: middle;
     }
 
     @media (max-width: 480px) {
-      height: 50px; 
+      height: 50px;
+      line-height: 50px;
     }
   `;
 

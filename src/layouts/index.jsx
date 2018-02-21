@@ -6,6 +6,7 @@ import Sidebar from './components/sidebar/sidebar';
 import Header from './components/header/header';
 import Grid from './components/grid/grid';
 import Main from './components/main/main';
+import Navigation from '../components/shared/navigation';
 
 import config from "../../data/SiteConfig";
 import "./index.css";
@@ -57,7 +58,9 @@ export default class MainLayout extends React.Component {
         </Helmet>
         <Grid>
           <Header />
-          <Sidebar />
+          <Sidebar>
+            <Navigation currentPath={this.props.location.pathname} />
+          </Sidebar>
           <Main>
             {children()}
           </Main>
