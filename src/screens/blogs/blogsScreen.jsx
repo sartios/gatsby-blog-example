@@ -3,8 +3,6 @@ import React from 'react';
 import Container from '../../components/shared/container';
 import Grid from './components/grid/grid';
 import Column from './components/column/column';
-import ContactContainer from './components/contactContainer/contactContainer';
-import Contact from '../../components/elements/contact/contact';
 import PostListing from '../../components/elements/postListing/postListing';
 
 /**
@@ -13,11 +11,6 @@ import PostListing from '../../components/elements/postListing/postListing';
 const BlogsScreen = (props) => (
   <Container>
     <Grid>
-      <Column name="contact" hideOnMobile>
-        <ContactContainer>
-          <Contact />
-        </ContactContainer>
-      </Column>
       <Column name="blogs">
         <PostListing postEdges={props.postEdges} />
       </Column>

@@ -9,16 +9,15 @@ const Grid = props => {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-areas: "contact about skills";
-    grid-gap: 8px 8px;
+    grid-template-columns: 75% 20%;
+    grid-template-areas: "about skills";
 
     @media (max-width: 992px) {
-      grid-template-columns: 40% 60%;
+      grid-template-columns: 100%;
       grid-gap: 8px 8px;
       grid-template-areas:
-        "contact about"
-        "skills skills"
+        "about"
+        "skills"
     }
 
     @media (max-width: 768px) {

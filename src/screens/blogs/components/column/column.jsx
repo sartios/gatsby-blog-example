@@ -5,19 +5,10 @@ import styled from 'styled-components';
  * Column component for the main screen.
  */
 const Column = props => {
-  const ColumnWrapper =props.hideOnMobile
-  ? styled.div`
+  const ColumnWrapper = styled.div`
     height: 100%;
     grid-area: ${() => props.name}
-
-    @media (max-width: 768px) {
-      display: 'none'
-    }
-  `
-  : styled.div`
-    height: 100%;
-    grid-area: ${() => props.name}
-  `
+  `;
 
   return (
     <ColumnWrapper>
@@ -26,21 +17,13 @@ const Column = props => {
   );
 }
 
-const { bool, string } = React.PropTypes;
+const { string } = React.PropTypes;
 
 Column.propTypes = {
   /**
    * The name of the grid column.
    */
-  name: string.isRequired,
-  /**
-   * True to hide the column on mobile.
-   */
-  hideOnMobile: bool
-}
-
-Column.defaultProps = {
-  hideOnMobile: false
+  name: string.isRequired
 }
 
 export default Column;
