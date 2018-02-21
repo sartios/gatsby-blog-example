@@ -1,9 +1,15 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import Navigation from '../components/shared/navigation';
-import Container from '../components/shared/container/container';
-import Footer from '../components/elements/footer/footer';
+import Container from './components/container/container';
+import Sidebar from './components/sidebar/sidebar';
+import Header from './components/header/header';
+import Grid from './components/grid/grid';
+import Main from './components/main/main';
+
+// import Navigation from '../components/shared/navigation';
+// import Container from '../components/shared/container/container';
+// import Footer from '../components/elements/footer/footer';
 import config from "../../data/SiteConfig";
 import "./index.css";
 
@@ -42,20 +48,27 @@ export default class MainLayout extends React.Component {
     }
     return title;
   }
+  
   render() {
     const { children } = this.props;
+    
     return (
-      <div>
+      <Container>
         <Helmet>
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        <Navigation />
+        <Grid>
+          <Header />
+          <Sidebar />
+          <Main />
+        </Grid>
+        {/* <Navigation />
         <Container>
           {children()}
         </Container>
-        <Footer config={config} />
-      </div>
+        <Footer config={config} /> */}
+      </Container>
     );
   }
 }
