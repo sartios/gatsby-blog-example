@@ -6,7 +6,7 @@ import styled from 'styled-components';
  */
 const Main = props => {
   const MainArea = styled.section`
-    background-color: #8E44Ad;
+    background-color: #4183D7;
     grid-area: main;
 
     @media (max-width: 768px) {

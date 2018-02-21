@@ -6,6 +6,8 @@ export const theme = {
 
   peterRiver: '#3498DB',
   belizeHole: '#2980b9',
+  royalBlue: '#4183D7',
+  jacksonsPurple: '#1F3A93',
 
   amethyst: '#9B59B6',
   wisteria: '#8E44Ad',

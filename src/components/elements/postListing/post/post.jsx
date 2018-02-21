@@ -12,7 +12,7 @@ const Post = props => {
     display: inline-block;
     margin: 10px;
     padding: 24px;
-    background-color: white;
+    background-color: #ECF0F1;
 
     a {
       text-decoration: none;
@@ -49,7 +49,7 @@ const Post = props => {
     <Container>
       <Link to={props.data.path}>
         <PostMeta>
-          <i className="fab fa-react" />
+          <i className="fab fa-react" style={{color: '#3498DB'}} />
           <span>{props.data.date}</span>
           &#9679;
           <span>{props.data.timeToRead} min</span>

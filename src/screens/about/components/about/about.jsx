@@ -4,7 +4,7 @@ import styled from 'styled-components';
 class About extends Component {
   render() {
     const Container = styled.div`
-      background-color: white;
+      background-color: #ECF0F1;
       height: auto;
       min-height: 600px;
       padding: 30px 150px 30px 30px;
