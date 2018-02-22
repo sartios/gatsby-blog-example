@@ -6,12 +6,17 @@ import styled from 'styled-components';
  */
 const Title = () => {
   const TitleWrapper = styled.div`
-    color: #3F4548;
+    color: #95A5A6;
     font-weight: bold;
     font-size: 18px; 
     padding-left: 10px;
-    text-transform: uppercase;
-  `
+    text-transform: capitalize;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: inline;
+    }
+    `
 
   return (
     <TitleWrapper>sartios</TitleWrapper>
