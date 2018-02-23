@@ -6,6 +6,10 @@ const Avatar = () => {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   `
 
   const AvatarImage = styled.img`
