@@ -163,7 +163,7 @@ tags:
         </div>
         <div class="card-content">
             <div><a href="https://github.com/sartios" target="_blank"><i class="fab fa-github"></i>GitHub</a></div>
-            <div><a href="https://www.linkedin.com/in/sartios-savramis-1ab86238/" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a></div>
+            <div><a href="https://www.linkedin.com/in/sartios/" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a></div>
             <div><a href="mailto:savramis.sartios@gmail.com"><i class="fas fa-envelope"></i>Email</a></div>
             <div><a href="https://twitter.com/sartios7" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></div>
         </div>
