@@ -8,7 +8,7 @@ module.exports = {
   siteDescription: "React, D3, JavaScript and front-end tutorials, guides and blogs.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
+  googleAnalyticsID: "UA-114727656-1", // GA tracking ID.
   postDefaultCategoryID: "Tech", // Default category for posts.
   userName: "Advanced User", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
