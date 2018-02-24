@@ -9,6 +9,10 @@ const Container = props => {
     display: flex;
     flex-direction: column;
 
+    a {
+      text-decoration: none;
+    }
+
     @media (max-width: 768px) {
       flex-direction: row;
       justify-content: space-between;
