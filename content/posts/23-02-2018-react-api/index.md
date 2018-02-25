@@ -3,6 +3,7 @@ title: "React API"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "23-02-2018"
 category: "front-end"
+description: "React API. An overview of the React API."
 tags:
     - programming
     - front-end

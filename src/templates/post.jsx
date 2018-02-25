@@ -28,6 +28,26 @@ export default class PostTemplate extends React.Component {
     const Article = styled.article`
       background-color: white;
       padding: 24px;
+
+      h1 {
+        font-size: 3em;
+        line-height: 1.25em;
+      }
+
+      h2 {
+        font-size: 2.25em;
+        line-height: 1.15em;
+      }
+
+      h3 {
+        font-size: 1.75em;
+        line-height: 1.13em;
+      }
+
+      h4 {
+        font-size: 1.125em;
+        line-height: 1.11em;
+      }
     `
 
     const MetaData = styled.div`
@@ -69,6 +89,7 @@ export const pageQuery = graphql`
         date
         category
         tags
+        description
       }
       fields {
         slug
