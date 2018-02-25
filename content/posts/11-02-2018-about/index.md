@@ -80,8 +80,8 @@ tags:
     justify-content: space-between;
 }
 
-.purple {
-    background-color: #9B59B6;
+.jacksonsPurple {
+    background-color: #1F3A93;
 }
 
 @media only screen and (max-width: 480px) {
@@ -121,7 +121,7 @@ tags:
 <div class="about-cards-container">
 <div class="about-cards">
     <div class="about-card">
-        <div class="card-title purple">
+        <div class="card-title jacksonsPurple">
             <i class="fas fa-briefcase"></i>
             Profession
         </div>
@@ -132,7 +132,7 @@ tags:
         </div>
     </div>
     <div class="about-card">
-        <div class="card-title purple">
+        <div class="card-title jacksonsPurple">
             <i class="fas fa-terminal"></i>
             Technologies
         </div>
@@ -146,7 +146,7 @@ tags:
 </div>
 <div class="about-cards">
     <div class="about-card">
-        <div class="card-title purple">
+        <div class="card-title jacksonsPurple">
             <i class="fas fa-code-branch"></i>
             Open Source
         </div>
@@ -157,7 +157,7 @@ tags:
         </div>
     </div>
     <div class="about-card">
-        <div class="card-title purple">
+        <div class="card-title jacksonsPurple">
             <i class="fas fa-address-card"></i>
             Links
         </div>
