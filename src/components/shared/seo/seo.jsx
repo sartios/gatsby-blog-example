@@ -9,6 +9,7 @@ class SEO extends Component {
     let description;
     let image;
     let postURL;
+    
     if (postSEO) {
       const postMeta = postNode.frontmatter;
       title = postMeta.title;
@@ -22,6 +23,7 @@ class SEO extends Component {
       description = config.siteDescription;
       image = config.siteLogo;
     }
+    
     const realPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
     image = config.siteUrl + realPrefix + image;
     const blogURL = config.siteUrl + config.pathPrefix;

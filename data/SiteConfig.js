@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: "Sartios: React, D3 and JavaScript articles", // Site title.
   siteTitleAlt: "Sartios: React, D3 and JavaScript articles", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://www.sartios.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://sartios.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "React, D3, JavaScript and front-end tutorials, guides and blogs.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
@@ -11,7 +11,7 @@ module.exports = {
   googleAnalyticsID: "UA-114727656-1", // GA tracking ID.
   postDefaultCategoryID: "Tech", // Default category for posts.
   userName: "Advanced User", // Username to display in the author segment.
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
+  userTwitter: "sartios7", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Thessaloniki, Greece.", // User location to display in the author segment.
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
   userDescription:

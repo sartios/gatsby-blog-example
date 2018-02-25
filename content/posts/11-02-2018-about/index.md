@@ -1,11 +1,11 @@
 ---
 title: "About Me"
+description: "Sartios software developer from Thessaloniki, Greece"
 category: "about"
 date: "11/02/2018"
 tags:
     - about
 ---
-# A little about me
 
 <style>
 .intro-container {
@@ -114,7 +114,7 @@ tags:
 <img class="intro-image" src="https://semantic-ui.com/images/wireframe/image.png" />
 <div class="intro-text">
   <span>Hello I'm Sartios,</span>
-  <span>a 29 year old developer from Greece.</span>
+  <span>a fullstack software developer from Thessaloniki, Greece.</span>
 </div>
 </div>
 
