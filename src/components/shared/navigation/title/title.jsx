@@ -12,6 +12,15 @@ const Title = () => {
     padding-left: 10px;
     text-transform: capitalize;
     display: none;
+    
+    a,
+    a:hover,
+    a:link,
+    a:active,
+    a:focus {
+      text-decoration: none;
+      color: inherit;
+    }
 
     @media (max-width: 768px) {
       display: inline;
@@ -19,7 +28,7 @@ const Title = () => {
     `
 
   return (
-    <TitleWrapper>sartios</TitleWrapper>
+    <TitleWrapper><a href="/">sartios</a></TitleWrapper>
   )
 }
 
