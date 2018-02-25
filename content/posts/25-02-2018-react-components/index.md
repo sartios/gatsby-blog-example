@@ -10,8 +10,6 @@ tags:
     - react
 ---
 
-<a href="/react-api">Back to API</a>
-
 Components are the basic building blocks of a React application. React is a framework for developing the UI parts of an application, so a React component is any part of the UI that can contain React Node(s), a representation of a DOM node inside Virtual DOM. Usually, a component is written in JSX but pure JavaScript can be used as well.
 
 ## Class Components
@@ -307,3 +305,5 @@ export default MyParentComponent;
 ## Conclusion
 
 As a conclusion I will answer the question *when to use functional components and when to use class components?*. The reason to use functional components is not the performance, because they are wrapped internally in a class, but because you do not need an internal state or to override a lifecycle hook. In case you need anything of these two, you have to go with class components.
+
+<a href="/react-api">Back to API</a>

@@ -10,8 +10,6 @@ tags:
     - react
 ---
 
-<a href="/react-api">Back to API</a>
-
 <style>
   .api-container {
     display: flex;
@@ -249,3 +247,5 @@ class MyComponent extends React.Component {
     }
 }
 ```
+
+<a href="/react-api">Back to API</a>

@@ -169,3 +169,6 @@ React is the entry point of the React Library. The React global object defines t
             </div>
         </a>
     </div>
+</div>
+
+<a href="/">Back to blogs</a>

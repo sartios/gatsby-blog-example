@@ -3,13 +3,12 @@ title: "React Lifecycle Hooks"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "13-02-2018"
 category: "front-end"
+description: "react lifecycle methods, react lifecycle hooks"
 tags:
     - programming
     - front-end
     - react
 ---
-
-# React Lifecycle Hooks
 
 React provides lifecycle methods that you can override into the Class Components. Methods prefixed with **will** are called right before something happens, and methods prefixed with **did** are called right after something happens.
 
@@ -190,3 +189,5 @@ The ``componentDidCatch()`` method catches errors in the components below in a t
 * Capture unhandled JavaScript errors in the below tree.
 * Display a fallback UI.
 * Use ``setState()`` to render a fallback UI when capture an error.
+
+<a href="/">Back to Blogs</a>

@@ -3,13 +3,12 @@ title: "React Introduction"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "12-02-2018"
 category: "front-end"
+description: "react components, react virtual dom, react render"
 tags:
     - programming
     - front-end
     - react
 ---
-
-# Introduction to React
 
 React is a JavaScript library for creating user interfaces with datasets that change over time. The basic React concepts are Components and Virtual DOM.
 
@@ -167,3 +166,5 @@ A list of alternative renderers:
 * <a href="https://github.com/Yomguithereal/react-blessed">react-blessed</a> - allows you to write terminal applications using React. It's even possible to animate them.
 * <a href="https://projectseptemberinc.gitbooks.io/gl-react/content/">gl-react</a> - provides WebGL bindings for React.
 * <a href="https://github.com/Flipboard/react-canvas">react-canvas</a> - provides React bindings for the Canvas element.
+
+<a href="/">Back to Blogs</a>
