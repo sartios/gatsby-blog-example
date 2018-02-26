@@ -2,7 +2,7 @@
 title: "D3 Introduction"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "18-02-2018"
-category: "front-end"
+category: "main"
 tags:
     - programming
     - front-end
@@ -127,12 +127,11 @@ However, using standard charts does not always fullfil your needs in an advanced
   </div>
 </div>
 
-
 ## Installation
 
 1. Download the latest version and use the script tag.
-2. Download from npm ``npm install --save d3`` the whole library.
-3. Download from npm specific modules ``npm install --save d3-module-name``.
+2. Download from npm `npm install --save d3` the whole library.
+3. Download from npm specific modules `npm install --save d3-module-name`.
 
 ## D3 React integration
 
@@ -142,7 +141,6 @@ One way is to use React to build the DOM structure and pass the DOM container to
 
 ```jsx
 class BarChart extends React.Component {
-
   componentDidMount() {
     this.createBarChart();
   }
@@ -154,14 +152,12 @@ class BarChart extends React.Component {
   createBarChart = () => {
     // D3 code to create bar chart
     // by appending children in this.container
-  }
+  };
 
   render() {
-    return (<svg
-      ref={node => this.container = node}
-      width={500}
-      height={500}
-      />);
+    return (
+      <svg ref={node => (this.container = node)} width={500} height={500} />
+    );
   }
 }
 ```
@@ -177,18 +173,15 @@ class BarChart extends React.Component {
   renderBars() {
     const bars = this.getBars();
 
-    return (<g>{bars}</g>);
+    return <g>{bars}</g>;
   }
 
   render() {
     return (
-      <svg
-        width={500}
-        height={500}
-      >
+      <svg width={500} height={500}>
         {this.renderBars()}
       </svg>
-    )
+    );
   }
 }
 ```
