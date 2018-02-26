@@ -1,16 +1,18 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import BlogsScreen from '../screens/blogs/blogsScreen';
+import BlogsScreen from "../screens/blogs/blogsScreen";
 import SEO from "../components/shared/seo/seo";
 import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
   render() {
-    const {data} = this.props;
-    const {allMarkdownRemark} = data;
+    const { data } = this.props;
+    const { allMarkdownRemark } = data;
 
-    if( allMarkdownRemark === undefined ) { return null; }
+    if (allMarkdownRemark === undefined) {
+      return null;
+    }
     const postEdges = allMarkdownRemark.edges;
 
     return (
@@ -30,7 +32,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       limit: 2000
-      filter:{frontmatter: {category:{eq: "main"}}}
+      filter: { frontmatter: { category: { eq: "main" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

@@ -1,7 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 import UserInfo from "../components/elements/userInfo/userInfo";
 import PostTags from "../components/elements/postTags/postTags";
@@ -9,7 +8,7 @@ import SocialLinks from "../components/elements/socialLinks/socialLinks";
 import SEO from "../components/shared/seo/seo";
 import config from "../../data/SiteConfig";
 
-import './post.css';
+import "./post.css";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -28,27 +27,7 @@ export default class PostTemplate extends React.Component {
     const Article = styled.article`
       background-color: white;
       padding: 24px;
-
-      h1 {
-        font-size: 3em;
-        line-height: 1.25em;
-      }
-
-      h2 {
-        font-size: 2.25em;
-        line-height: 1.15em;
-      }
-
-      h3 {
-        font-size: 1.75em;
-        line-height: 1.13em;
-      }
-
-      h4 {
-        font-size: 1.125em;
-        line-height: 1.11em;
-      }
-    `
+    `;
 
     const MetaData = styled.div`
       display: flex;

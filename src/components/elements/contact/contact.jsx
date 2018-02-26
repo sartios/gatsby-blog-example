@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Contact = props => {
+const Contact = () => {
   const Grid = styled.div`
     display: grid;
     height: 100%;

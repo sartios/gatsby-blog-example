@@ -65,7 +65,7 @@
     "build:gh": "npm run build:pp && gh-pages -d public",
     "build:prod": "npm run clean && npm run build:pp && firebase deploy",
     "clean": "rmdir /s /q public",
-    "lint:js": "eslint --ext .js,.jsx .",
+    "lint:js": "eslint --ext .js,.jsx . --fix",
     "lint:md": "remark content/posts/",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
     "format:js": "prettier '**/*.{js,jsx}' --write"
