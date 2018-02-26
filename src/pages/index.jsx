@@ -30,7 +30,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       limit: 2000
-      filter:{frontmatter: {tags:{ne: "about"},tags:{ne: "draft"}}}
+      filter:{frontmatter: {category:{eq: "main"}}}
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
