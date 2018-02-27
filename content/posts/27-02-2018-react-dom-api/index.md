@@ -1,124 +1,89 @@
 ---
-title: "React API"
+title: "ReactDOM API"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
-date: "23-02-2018"
+date: "27-02-2018"
 category: "main"
-description: "React API. An overview of the React API."
+description: "reactdom api overview"
 tags:
     - programming
     - front-end
     - react
 ---
 
-React is the entry point of the React Library. The React global object defines the following API.
+ReactDOM provides DOM-specific methods and it has its own npm package.
+
+`npm install --save react-dom`
 
 ## API Overview
 
 <div class="api-container">
     <div class="api-item-container">
-        <a class="api-link" href="/react-components">
+        <a class="api-link" href="/react-dom-render">
             <div class="api-item">
                 <div>
                     <i class="fas fa-code"></i>
-                    Component
+                    render(element, container)
                 </div>
                 <div class="api-description">
-                    Base class for React components.
+                    Renders a React element into the DOM in the supplied container and returns a reference to the component.
                 </div>
             </div>
         </a>
     </div>
     <div class="api-item-container">
-        <a class="api-link" href="/react-components">
+        <a class="api-link" href="/react-dom-hydrate">
             <div class="api-item">
                 <div>
                     <i class="fas fa-code"></i>
-                    PureComponent
+                    hydrate(element, container)
                 </div>
                 <div class="api-description">
-                    Similar to React.Component with different implementation for shouldComponentUpdate().
+                    Like render() but for server side rendering.
                 </div>
             </div>
         </a>
     </div>
     <div class="api-item-container">
-        <a class="api-link" href="/react-children">
+        <a class="api-link" href="/react-dom-unmount-component-at-node">
             <div class="api-item">
                 <div>
                     <i class="fas fa-code"></i>
-                    Children
+                    unmountComponentAtNode(container)
                 </div>
                 <div class="api-description">
-                    Utilities to work with components' children.
+                    Remove a mounted React component from the DOM and clean up its event handlers and state.
                 </div>
             </div>
         </a>
     </div>
     <div class="api-item-container">
-        <a class="api-link" href="/react-fragment">
+        <a class="api-link" href="/react-dom-find-dom-node">
             <div class="api-item">
                 <div>
                     <i class="fas fa-code"></i>
-                    Fragment
+                    findDOMNode
                 </div>
                 <div class="api-description">
-                    Component to be used in order to return multiple elements in a render() method.
+                    Returns the DOM element if the component has been mounted.
                 </div>
             </div>
         </a>
     </div>
     <div class="api-item-container">
-        <a class="api-link" href="/react-create-element">
+        <a class="api-link" href="/react-dom-create-portal">
             <div class="api-item">
                 <div>
                     <i class="fas fa-code"></i>
-                    createElement(type, props, children)
+                    createPortal(child, container)
                 </div>
                 <div class="api-description">
-                    Creates and returns a new React element of the given type.
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="api-item-container">
-        <a class="api-link" href="/react-clone-element">
-            <div class="api-item">
-                <div>
-                    <i class="fas fa-code"></i>
-                    cloneElement(element, props, children)
-                </div>
-                <div class="api-description">
-                    Clones and returns a new React element using element as the starting.
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="api-item-container">
-        <a class="api-link" href="/react-create-factory">
-            <div class="api-item">
-                <div>
-                    <i class="fas fa-code"></i>
-                    createFactory(type)
-                </div>
-                <div class="api-description">
-                    Returns a function that produces React elements of a given type.
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="api-item-container">
-        <a class="api-link" href="/react-is-valid-element">
-            <div class="api-item">
-                <div>
-                    <i class="fas fa-code"></i>
-                    isValidElement(object)
-                </div>
-                <div class="api-description">
-                    Verifies that the object is a React element.
+                    Renders children into a DOM node that exits outside the DOM hierarchy of the parent component.
                 </div>
             </div>
         </a>
     </div>
 </div>
+
+The provided methods are DOM-specific. Most of your components should not need to use this module.
 
 <a href="/">Back to blogs</a>
