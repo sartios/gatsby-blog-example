@@ -9,6 +9,7 @@ import SEO from "../components/shared/seo/seo";
 import config from "../../data/SiteConfig";
 
 import "./post.css";
+import "./posts-api.css";
 
 export default class PostTemplate extends React.Component {
   render() {

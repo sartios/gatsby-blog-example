@@ -1,0 +1,47 @@
+.api-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.api-item-container {
+  width: 30%;
+  min-height: 150px;
+  margin-top: 5px;
+  border: 1px solid lightgray;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.api-item {
+  padding: 30px;
+}
+
+.api-description {
+  padding-top: 15px;
+  font-weight: normal;
+  font-size: 0.7em;
+}
+
+.api-link {
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+  .api-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .api-item-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .api-item-container {
+    width: 80%;
+  }
+}

@@ -18,7 +18,7 @@ pre.language-jsx {
 
   span {
     overflow-wrap: break-word;
-  } 
+  }
 }
 
 code {
@@ -33,24 +33,24 @@ code {
  * HTML Code Styles 
  */
 pre.language-html code {
-  color: #C8C8C8;
+  color: #c8c8c8;
   background-color: inherit;
 }
 
 pre.language-html span.token.tag {
-  color: #E06C75;
+  color: #e06c75;
 }
 
 pre.language-html span.token.punctuation {
-  color: #C8C8C8;
+  color: #c8c8c8;
 }
 
 pre.language-html span.token.attr-name {
-  color: #D19A66;
+  color: #d19a66;
 }
 
 pre.language-html span.token.attr-value {
-  color: #98C378;
+  color: #98c378;
 }
 
 /**
@@ -58,36 +58,36 @@ pre.language-html span.token.attr-value {
  */
 
 pre.language-javascript code {
-  color: #E06C75;
+  color: #e06c75;
   background-color: inherit;
 }
 
 pre.language-javascript span.token.comment {
-  color: #7F848E;
+  color: #7f848e;
 }
 
 pre.language-javascript span.token.function {
-  color: #61AFEF;
+  color: #61afef;
 }
 
 pre.language-javascript span.token.punctuation {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 pre.language-javascript span.token.string {
-  color: #98C378;
+  color: #98c378;
 }
 
 pre.language-javascript span.token.number {
-  color: #E5C07B;
+  color: #e5c07b;
 }
 
 pre.language-javascript span.token.keyword {
-  color: #C678DD;
+  color: #c678dd;
 }
 
 pre.language-javascript span.token.class-name {
-  color: #D19A66;
+  color: #d19a66;
 }
 
 /**
@@ -95,62 +95,62 @@ pre.language-javascript span.token.class-name {
  */
 
 pre.language-jsx code {
-  color: #E06C75;
+  color: #e06c75;
   background-color: inherit;
 }
 
 pre.language-jsx span.token.comment {
-  color: #7F848E;
+  color: #7f848e;
 }
 
 pre.language-jsx span.token.function {
-  color: #61AFEF;
+  color: #61afef;
 }
 
 pre.language-jsx span.token.punctuation {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 pre.language-jsx span.token.string {
-  color: #98C378;
+  color: #98c378;
 }
 
 pre.language-jsx span.token.number {
-  color: #E5C07B;
+  color: #e5c07b;
 }
 
 pre.language-jsx span.token.keyword {
-  color: #C678DD;
+  color: #c678dd;
 }
 
 pre.language-jsx span.token.class-name {
-  color: #D19A66;
+  color: #d19a66;
 }
 
 pre.language-jsx span.token.tag {
-  color: #E06C75;
+  color: #e06c75;
 }
 
 pre.language-jsx span.token.punctuation {
-  color: #C8C8C8;
+  color: #c8c8c8;
 }
 
 pre.language-jsx span.token.attr-name {
-  color: #D19A66;
+  color: #d19a66;
 }
 
 pre.language-jsx span.token.attr-value {
-  color: #98C378;
+  color: #98c378;
 }
 
 pre.language-jsx span.token.number {
-  color: #98C378;
+  color: #98c378;
 }
 
 pre.language-jsx .language-javascript span.token.operator {
-  color: #C678DD;
+  color: #c678dd;
 }
 
 pre.language-jsx .language-javascript span.token.punctuation {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }

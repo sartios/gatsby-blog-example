@@ -10,54 +10,13 @@ tags:
     - react
 ---
 
-<style>
-  .api-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .api-item {
-    padding: 30px;
-    width: 30%;
-    min-height: 150px;
-    margin-top: 5px;
-    border: 1px solid lightgray;
-    font-weight: bold;
-    font-size: 1.3em;
-  }
-
-  .api-description {
-    padding-top: 15px;
-    font-weight: normal;
-    font-size: 0.7em;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .api-container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .api-item {
-      width: 50%;
-    }
-  }
-
-  @media only screen and (max-width: 480px) {
-    .api-item {
-      width: 80%;
-    }
-  }
-</style>
-
 React.Children provides utilities for dealing with the this.props.children data structure.
 
 ## Child Component
 
 Child is a JavaScript expression inside a parent. Children in React don't have to be components, they can be anything. You can pass any JavaScript expression as children, including functions, arrays, object, etc.
 
-Parents can decide not to render any children or to manipulate them before rendering. A parent can access its children from ``props.children`` and because can have one element, multiple elements, or none at all, this value is a single child node, an array of child nodes or undefined.
+Parents can decide not to render any children or to manipulate them before rendering. A parent can access its children from `props.children` and because can have one element, multiple elements, or none at all, this value is a single child node, an array of child nodes or undefined.
 
 A React Child has the following key properties:
 
@@ -162,89 +121,83 @@ A React Child has the following key properties:
 ### Looping over children
 
 ```jsx
-import React from 'react'
+import React from "react";
 
 class MyComponent extends React.Component {
-    // component implementation
+  // component implementation
 
-    render() {
-        return (
-            <div>
-                {
-                    // Ignore the first child
-                    React.Children.map(this.props.children, (child, i) => {
-                        if (i < 1) return null
-                        return child
-                    })
-                }
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        {// Ignore the first child
+        React.Children.map(this.props.children, (child, i) => {
+          if (i < 1) return null;
+          return child;
+        })}
+      </div>
+    );
+  }
 }
 ```
 
 ### Counting children
 
 ```jsx
-import React from 'react'
+import React from "react";
 
 class MyComponent extends React.Component {
-    // component implementation
+  // component implementation
 
-    render() {
-        return (
-            <div>
-                {`This component has ${React.Children.count(this.props.children)} children.`}
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        {`This component has ${React.Children.count(
+          this.props.children
+        )} children.`}
+      </div>
+    );
+  }
 }
 ```
 
 ### Enforcing single child
 
 ```jsx
-import React from 'react'
+import React from "react";
 
 class MyComponent extends React.Component {
-    // component implementation
+  // component implementation
 
-    render() {
-        try {
-            const child = React.Children.only(this.props.children)
-            return (
-                <div>
-                    {child}
-                </div>
-            )
-        } catch (err) {
-            return null;
-        }
+  render() {
+    try {
+      const child = React.Children.only(this.props.children);
+      return <div>{child}</div>;
+    } catch (err) {
+      return null;
     }
+  }
 }
 ```
 
 ### Immutably cloning elements
 
 ```jsx
-import React from 'react'
+import React from "react";
 
 class MyComponent extends React.Component {
-    // component implementation
+  // component implementation
 
-    render() {
-        return (
-            <div>
-                {
-                    React.Children.map(this.props.children, (child, i) => {
-                        return React.cloneElement(child, {
-                            // Change the initial properties of the child
-                        })
-                    })
-                }
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        {React.Children.map(this.props.children, (child, i) => {
+          return React.cloneElement(child, {
+            // Change the initial properties of the child
+          });
+        })}
+      </div>
+    );
+  }
 }
 ```
 

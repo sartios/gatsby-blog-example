@@ -13,47 +13,6 @@ D3 provides methods to select DOM elements in order to do something with them. T
 
 ## API
 
-<style>
-  .api-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .api-item {
-    padding: 30px;
-    width: 40%;
-    min-height: 150px;
-    margin-top: 5px;
-    border: 1px solid lightgray;
-    font-weight: bold;
-    font-size: 1.3em;
-  }
-
-  .api-description {
-    padding-top: 15px;
-    font-weight: normal;
-    font-size: 0.7em;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .api-container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .api-item {
-      width: 50%;
-    }
-  }
-
-  @media only screen and (max-width: 480px) {
-    .api-item {
-      width: 80%;
-    }
-  }
-</style>
-
 <div class="api-container">
   <div class="api-item">
     <div>
@@ -75,18 +34,17 @@ D3 provides methods to select DOM elements in order to do something with them. T
   </div>
 </div>
 
-
 ## How to use
 
 ### Select element by CSS selector
 
-````html
+```html
 <svg width="500" height="500">
   <circle id="circle1" class="svg-circle" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
   <circle id="circle2" class="svg-circle" cx="100" cy="100" r="40" stroke="black" stroke-width="3" fill="red" />
   <circle id="circle3" class="svg-circle" cx="200" cy="200" r="40" stroke="black" stroke-width="3" fill="red" />
 </svg>
-````
+```
 
 Selecting a circle by its tag name:
 
@@ -94,7 +52,7 @@ Selecting a circle by its tag name:
 /**
  * Construct a selection for the first circle.
  */
-const circle = d3.select('circle');
+const circle = d3.select("circle");
 ```
 
 Selecting a circle by its class name:
@@ -103,7 +61,7 @@ Selecting a circle by its class name:
 /**
  * Construct a selection for the first circle.
  */
-const circle = d3.select('.svg-circle');
+const circle = d3.select(".svg-circle");
 ```
 
 Selecting a circle by its id:
@@ -112,18 +70,18 @@ Selecting a circle by its id:
 /**
  * Construct a selection for the first circle.
  */
-const circle = d3.select('#circle1');
+const circle = d3.select("#circle1");
 ```
 
 ### Select elements by CSS selector
 
-````html
+```html
 <svg width="500" height="500">
   <circle id="circle1" class="svg-circle" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
   <circle id="circle2" class="svg-circle" cx="100" cy="100" r="40" stroke="black" stroke-width="3" fill="red" />
   <circle id="circle3" class="svg-circle" cx="200" cy="200" r="40" stroke="black" stroke-width="3" fill="red" />
 </svg>
-````
+```
 
 Selecting the circles by the tag name:
 
@@ -131,7 +89,7 @@ Selecting the circles by the tag name:
 /**
  * Construct a selection for the circles.
  */
-const circles = d3.selectAll('circle');
+const circles = d3.selectAll("circle");
 ```
 
 Selecting the circles by the class name:
@@ -140,7 +98,7 @@ Selecting the circles by the class name:
 /**
  * Construct a selection for the circles.
  */
-const circles = d3.selectAll('.svg-circle');
+const circles = d3.selectAll(".svg-circle");
 ```
 
 Selecting the circles by id:
@@ -149,12 +107,12 @@ Selecting the circles by id:
 /**
  * Construct a selection array with first circle as child.
  */
-const circles = d3.selectAll('#circle1');
+const circles = d3.selectAll("#circle1");
 ```
 
 ### Select nesting elements
 
-````html
+```html
 <svg width="500" height="500">
   <g class="group-1">
     <circle id="circle1" class="svg-circle" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
@@ -165,32 +123,32 @@ const circles = d3.selectAll('#circle1');
     <circle id="circle4" class="svg-circle" cx="200" cy="200" r="40" stroke="black" stroke-width="3" fill="red" />
   </g>
 </svg>
-````
+```
 
 ```javascript
 /**
  * Construct a selection for the circles in the 1st group.
  */
-const group1Circles = d3.select('.group-1').selectAll('circles');
+const group1Circles = d3.select(".group-1").selectAll("circles");
 ```
 
 ### Select non-existing elements
 
 The selection will return an array with representations for the elements, in order to manipulate later (maybe insert them).
 
-````html
+```html
 <svg width="500" height="500">
   <circle id="circle1" class="svg-circle" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
   <circle id="circle2" class="svg-circle" cx="100" cy="100" r="40" stroke="black" stroke-width="3" fill="red" />
   <circle id="circle3" class="svg-circle" cx="200" cy="200" r="40" stroke="black" stroke-width="3" fill="red" />
 </svg>
-````
+```
 
 ```javascript
 /**
  * An array of representations for the rects.
  */
-const rects = d3.selectAll('rect');
+const rects = d3.selectAll("rect");
 ```
 
 ## Summary

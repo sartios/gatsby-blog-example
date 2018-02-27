@@ -23,53 +23,6 @@ However, using standard charts does not always fullfil your needs in an advanced
 
 ## D3 API overview
 
-<style>
-  .api-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .api-item {
-    padding: 30px;
-    width: 30%;
-    min-height: 150px;
-    margin-top: 5px;
-    border: 1px solid lightgray;
-    font-weight: bold;
-    font-size: 1.3em;
-  }
-
-  .api-description {
-    padding-top: 15px;
-    font-weight: normal;
-    font-size: 0.7em;
-  }
-
-  @media only screen and (max-width: 992px) {
-    .api-item {
-      width: 45%;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .api-container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .api-item {
-      width: 50%;
-    }
-  }
-
-  @media only screen and (max-width: 480px) {
-    .api-item {
-      width: 80%;
-    }
-  }
-</style>
-
 <div class="api-container">
   <div class="api-item">
     <div>DOM Selection</div>
