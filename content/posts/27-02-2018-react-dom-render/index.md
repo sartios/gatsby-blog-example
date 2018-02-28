@@ -10,7 +10,7 @@ tags:
     - react
 ---
 
-React.render(element, container) renders a React element into the DOM in the supplied container and return a reference to the component or null for stateless components. This method can be used only in the browser.
+ReactDOM.render(element, container) renders a React element into the DOM in the supplied container and return a reference to the component or null for stateless components. This method can be used only in the browser.
 
 ## Usage
 
@@ -30,6 +30,29 @@ class App extends React.Component {
 
 const container = document.createElement("div");
 const myComponentRef = ReactDOM.render(<App />, container);
+```
+
+**render different components in same root**
+
+```javascript
+const container = document.createElement("container");
+document.body.appendChild(container);
+
+ReactDOM.render(<div />, container);
+expect(container.firstChild.nodeName).toBe("DIV");
+
+ReactDOM.render(<span />, container);
+expect(container.firstChild.nodeName).toBe("SPAN");
+```
+
+**reuse markup when rendering the same target twice**
+
+```javascript
+const container = document.createElement("container");
+const instance1 = ReactDOM.render(<div />, container);
+const instance2 = ReactDOM.render(<div />, container);
+
+expect(instance1 === instance2).toBe(true);
 ```
 
 ## Server Side Rendering - SSR
