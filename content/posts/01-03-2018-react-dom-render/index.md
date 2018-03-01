@@ -214,4 +214,8 @@ setTimeout(() => {
 </div>
 ```
 
+## Conclusion
+
+React 16 provides two methods for rendering an app to server side generated container, render() and <a href="/react-dom-hydrate">hydrate()</a>. Though, on React 17 render() will be deprecated for this use so it's recommended to use <a href="/react-dom-hydrate">hydrate()</a> instead.
+
 <a href="/react-dom-api">Back to API</a>
