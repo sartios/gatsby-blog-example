@@ -124,15 +124,34 @@ server.listen(3000, () => {
 
 The browser SSR version is a case where the container with some initial content will be rendered from the server and the injection of the app into the container will happen at browser. The app bundle will be served from the server as well.
 
+ReactDOM.render will not preserve the markup but will replace the content and the initial SSR content will not have event listeners.
+
 You can find a working example at <a href="https://github.com/sartios/react-ssr-example">github</a>.
 
 * App.js
 
 ```jsx
 import React from "react";
+import PropTypes from "prop-types";
 
 const App = props => {
-  return <div>Hello {props.name}</div>;
+  return (
+    <div onClick={props.onClick}>
+      Hello world - {`${props.env}`} Side Rendered Component
+    </div>
+  );
+};
+
+const { func, string } = PropTypes;
+
+App.propTypes = {
+  onClick: func,
+  env: string
+};
+
+App.defaultProps = {
+  onClick: () => console.log("Hello World - SSR Content"),
+  env: "SSR"
 };
 
 export default App;
@@ -161,26 +180,28 @@ const Html = props => {
 * server.js
 
 ```javascript
+import express from "express";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
-import express from "express";
 
-import Html from "./Html";
+import App from "./components/App";
+import Html from "./components/Html";
 
+const PORT = 3000;
 const server = express();
+
+server.use("/", express.static("dist"));
 
 server.get("/", (req, res) => {
   res.send(
     ReactDOMServer.renderToStaticMarkup(
-      <Html
-        markup={ReactDOMServer.renderToString(<div>Initial SSR content</div>)}
-      />
+      <Html content={ReactDOMServer.renderToString(<App />)} />
     )
   );
 });
 
-server.listen(3000, () => {
-  console.log("listening on port 3000...");
+server.listen(PORT, () => {
+  console.log(`listening on port ${PORT}...`);
 });
 ```
 
@@ -189,9 +210,18 @@ server.listen(3000, () => {
 ```javascript
 import React from "react";
 import ReactDOM from "react-dom";
+
 import App from "./App";
 
-ReactDOM.render(<App name="World" />, document.getElementById("app"));
+setTimeout(() => {
+  ReactDOM.hydrate(
+    <App
+      env="Client"
+      onClick={() => console.log("Hello World - Client Side Content")}
+    />,
+    document.getElementById("app")
+  );
+}, 2000);
 ```
 
 <a href="/react-dom-api">Back to API</a>
