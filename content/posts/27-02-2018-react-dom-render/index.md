@@ -10,7 +10,7 @@ tags:
     - react
 ---
 
-ReactDOM.render(element, container) renders a React element into the DOM in the supplied container and return a reference to the component or null for stateless components. This method can be used only in the browser.
+ReactDOM.render(element, container) renders a React element into the DOM in the supplied container and return a reference to the component or null for stateless components. It does not modify the container node, it inserts a component to an existing DOM node without overwriting its children. This method can be used only in the browser.
 
 ## Usage
 
@@ -57,7 +57,12 @@ expect(instance1 === instance2).toBe(true);
 
 ## Server Side Rendering - SSR
 
-This method can not be used for server side rendering. Instead, `ReactDOMServer.renderToString` and `ReactDOMServer.renderToStaticMarkup` should be used.
+On SSR, server's response to the browser is the HTML of the page that is ready to be rendered. In this case the markup should be generated but `ReactDOMServer.renderToString` and/or `ReactDOMServer.renderToStaticMarkup`. However, event listeners will not be added if not use ReactDOM.render, but SEO support does not need event listeners.
+
+* `renderToString` - renders a React Element to its initial content.
+* `renderToStaticMarkup` - renders a React Element to its initial content excluding React specific attributes.
+
+### SEO SSR Version
 
 * App.js
 
@@ -84,7 +89,6 @@ const Html = props => {
       </head>
       <body>
         <div id="app" dangerouslySetInnerHTML={{ __html: props.markup }} />
-        <script src="/static/bundle.js" />
       </body>
     </html>
   );
@@ -101,9 +105,9 @@ import express from "express";
 import Html from "./Html";
 import App from "./App";
 
-app.use("/static", express.static("public"));
+const server = express();
 
-app.get("/", (req, res) => {
+server.get("/", (req, res) => {
   res.send(
     ReactDOMServer.renderToStaticMarkup(
       <Html markup={ReactDOMServer.renderToString(<App />)} />
@@ -111,9 +115,77 @@ app.get("/", (req, res) => {
   );
 });
 
-app.listen(3000, () => {
+server.listen(3000, () => {
   console.log("listening on port 3000...");
 });
+```
+
+### Browser SSR Version
+
+The browser ssr version is a case where the container will be rendered from the server and the injection of the app into the container will happen at browser. The app bundle will be served from the server as well.
+
+You can find a working example at <a href="https://github.com/sartios/react-ssr-example">github</a>.
+
+* App.js
+
+```jsx
+import React from "react";
+
+const App = props => {
+  return <div>Hello {props.name}</div>;
+};
+
+export default App;
+```
+
+* Html.js
+
+```jsx
+import React from "react";
+
+const Html = props => {
+  return (
+    <html>
+      <head>
+        <title>App</title>
+      </head>
+      <body>
+        <div id="app" />
+        <script src="/browser.bundle.js" />
+      </body>
+    </html>
+  );
+};
+```
+
+* server.js
+
+```javascript
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+import express from "express";
+
+import Html from "./Html";
+
+const server = express();
+
+server.get("/", (req, res) => {
+  res.send(ReactDOMServer.renderToStaticMarkup(<Html />));
+});
+
+server.listen(3000, () => {
+  console.log("listening on port 3000...");
+});
+```
+
+* browser.js
+
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+ReactDOM.render(<App name="Sartios" />, document.getElementById("app"));
 ```
 
 <a href="/react-dom-api">Back to API</a>
