@@ -1,7 +1,7 @@
 ---
 title: "ReactDOM Render"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
-date: "27-02-2018"
+date: "01-03-2018"
 category: "front-end"
 description: "how to use reactdom render"
 tags:
