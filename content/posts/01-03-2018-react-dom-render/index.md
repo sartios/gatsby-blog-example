@@ -136,7 +136,7 @@ import PropTypes from "prop-types";
 
 const App = props => {
   return (
-    <div onClick={props.onClick}>
+    <div className="app-content" onClick={props.onClick}>
       Hello world - {`${props.env}`} Side Rendered Component
     </div>
   );
@@ -157,26 +157,6 @@ App.defaultProps = {
 export default App;
 ```
 
-* Html.js
-
-```jsx
-import React from "react";
-
-const Html = props => {
-  return (
-    <html>
-      <head>
-        <title>App</title>
-      </head>
-      <body>
-        <div id="app" dangerouslySetInnerHTML={{ __html: props.markup }} />
-        <script src="/browser.bundle.js" />
-      </body>
-    </html>
-  );
-};
-```
-
 * server.js
 
 ```javascript
@@ -185,7 +165,6 @@ import React from "react";
 import ReactDOMServer from "react-dom/server";
 
 import App from "./components/App";
-import Html from "./components/Html";
 
 const PORT = 3000;
 const server = express();
@@ -193,11 +172,12 @@ const server = express();
 server.use("/", express.static("dist"));
 
 server.get("/", (req, res) => {
-  res.send(
-    ReactDOMServer.renderToStaticMarkup(
-      <Html content={ReactDOMServer.renderToString(<App />)} />
-    )
-  );
+  res.write("<!DOCTYPE html><html><head><title>App</title></head><body>");
+  res.write('<div id="app">');
+  res.write('<div id="loader">Loading...</div>');
+  res.write(ReactDOMServer.renderToString(<App />));
+  res.write('</div><script src="/browser.js"></script></body></html>');
+  res.end();
 });
 
 server.listen(PORT, () => {
@@ -214,7 +194,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 
 setTimeout(() => {
-  ReactDOM.hydrate(
+  ReactDOM.render(
     <App
       env="Client"
       onClick={() => console.log("Hello World - Client Side Content")}
@@ -222,6 +202,16 @@ setTimeout(() => {
     document.getElementById("app")
   );
 }, 2000);
+```
+
+* resulted markup
+
+```html
+<div id="app">
+  <div class="app-content">
+    Hello World - Client Side Rendered Content
+  </div>
+</div>
 ```
 
 <a href="/react-dom-api">Back to API</a>
