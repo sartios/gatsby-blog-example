@@ -14,7 +14,7 @@ ReactDOM.render(element, container) renders a React element into the DOM in the 
 
 ## Usage
 
-The place that React.render(element, container) is mostly used to render the application into DOM.
+React.render(element, container) is mostly used to render the application into DOM.
 
 ### In the browser
 
@@ -57,7 +57,7 @@ expect(instance1 === instance2).toBe(true);
 
 ## Server Side Rendering - SSR
 
-On SSR, server's response to the browser is the HTML of the page that is ready to be rendered. In this case the markup should be generated but `ReactDOMServer.renderToString` and/or `ReactDOMServer.renderToStaticMarkup`. However, event listeners will not be added if not use ReactDOM.render, but SEO support does not need event listeners.
+On Server Side Rendering the components will be rendered at server and the server will respond an HTML page to the browser. In this case the markup should be generated with `ReactDOMServer.renderToString` and/or `ReactDOMServer.renderToStaticMarkup`. The responded HTML will not include event listeners but SSR is usually used to render an initial HTML either for SEO or UX and after use ReactDOM.render to mount the application.
 
 * `renderToString` - renders a React Element to its initial content.
 * `renderToStaticMarkup` - renders a React Element to its initial content excluding React specific attributes.
@@ -122,7 +122,7 @@ server.listen(3000, () => {
 
 ### Browser SSR Version
 
-The browser ssr version is a case where the container will be rendered from the server and the injection of the app into the container will happen at browser. The app bundle will be served from the server as well.
+The browser SSR version is a case where the container with some initial content will be rendered from the server and the injection of the app into the container will happen at browser. The app bundle will be served from the server as well.
 
 You can find a working example at <a href="https://github.com/sartios/react-ssr-example">github</a>.
 
@@ -150,7 +150,7 @@ const Html = props => {
         <title>App</title>
       </head>
       <body>
-        <div id="app" />
+        <div id="app" dangerouslySetInnerHTML={{ __html: props.markup }} />
         <script src="/browser.bundle.js" />
       </body>
     </html>
@@ -170,7 +170,13 @@ import Html from "./Html";
 const server = express();
 
 server.get("/", (req, res) => {
-  res.send(ReactDOMServer.renderToStaticMarkup(<Html />));
+  res.send(
+    ReactDOMServer.renderToStaticMarkup(
+      <Html
+        markup={ReactDOMServer.renderToString(<div>Initial SSR content</div>)}
+      />
+    )
+  );
 });
 
 server.listen(3000, () => {
@@ -185,7 +191,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 
-ReactDOM.render(<App name="Sartios" />, document.getElementById("app"));
+ReactDOM.render(<App name="World" />, document.getElementById("app"));
 ```
 
 <a href="/react-dom-api">Back to API</a>
