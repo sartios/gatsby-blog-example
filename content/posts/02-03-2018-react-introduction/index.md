@@ -10,6 +10,16 @@ tags:
     - react
 ---
 
+React is a JavaScript library for building User Interfaces. There are many reasons to build a UI using React and a few of them are the following:
+
+* Optimized rendering performance.
+* SEO friendly.
+* Testable UI.
+* Code reusability with components.
+* Fast on large amount of data and components.
+
+In this series we are going to explore how to create a real world React application. A github repository is available with application's code.
+
 ## Contents
 
 <div class="api-container">
@@ -87,6 +97,19 @@ tags:
                 </div>
                 <div class="api-description">
                     Externalize application's state to Redux.
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="api-item-container">
+        <a class="api-link" href="/react-networking">
+            <div class="api-item">
+                <div>
+                    <i class="fas fa-bookmark"></i>
+                    Networking
+                </div>
+                <div class="api-description">
+                    Handle network requests.
                 </div>
             </div>
         </a>
