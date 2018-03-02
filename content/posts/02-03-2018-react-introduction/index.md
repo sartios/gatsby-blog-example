@@ -10,15 +10,13 @@ tags:
     - react
 ---
 
-React is a JavaScript library for building User Interfaces. There are many reasons to build a UI using React and a few of them are the following:
+React is a JavaScript library for building User Interfaces. A few reasons to build a UI using React are the following:
 
 * Optimized rendering performance.
 * SEO friendly.
 * Testable UI.
 * Code reusability with components.
 * Fast on large amount of data and components.
-
-In this series we are going to explore how to create a real world React application. A github repository is available with application's code.
 
 ## Contents
 
@@ -128,3 +126,7 @@ In this series we are going to explore how to create a real world React applicat
         </a>
     </div>
 </div>
+
+## Conclusions
+
+In this series we are going to explore how to create a real world React application. A github repository is available with application's code. In the end of the tutorial you will be able to build a real world application.
