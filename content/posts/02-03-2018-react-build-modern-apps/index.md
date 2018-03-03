@@ -132,3 +132,14 @@ React is a JavaScript library for building User Interfaces. A few reasons to bui
 ## Conclusions
 
 In this series we are going to explore how to create a real world React application. A github repository is available with application's code. In the end of the tutorial you will be able to build a real world application.
+
+<div class="post-btns-container">
+<a class="btn-flatmaterial" href="/s">
+  <i class="fas fa-angle-left"></i>
+  Back to blogs
+</a>
+<a class="btn-material next-btn" href="/react-primer">
+  React Primer
+  <i class="fas fa-angle-right"></i>
+</a>
+</div>
