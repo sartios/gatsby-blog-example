@@ -1,14 +1,16 @@
 ---
-title: "React Introduction"
+title: "React Build Modern Apps"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "01-03-2018"
 category: "draft"
-description: "introduction to react framework"
+description: "build modern apps with react framework"
 tags:
     - programming
     - front-end
     - react
 ---
+
+In this series of articles we are going to explore how to build a modern app with React Framework.
 
 React is a JavaScript library for building User Interfaces. A few reasons to build a UI using React are the following:
 

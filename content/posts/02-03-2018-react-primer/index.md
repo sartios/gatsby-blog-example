@@ -59,4 +59,4 @@ React provides all these nice things, but how do I create an application?
 
 In the following example we are going to create a very simple application what displays a message on the browser. We are going to create non ES6 components in order to introduce React API methods.
 
-<a href="/react-introduction">Back to main</a>
+<a href="/react-build-modern-apps">Back to main</a>
