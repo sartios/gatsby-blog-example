@@ -76,14 +76,14 @@ React is a JavaScript library for building User Interfaces. A few reasons to bui
         </a>
     </div>
     <div class="api-item-container">
-        <a class="api-link" href="/react-stateful-stateless-components">
+        <a class="api-link" href="/react-container-and-presentational-components">
             <div class="api-item">
                 <div>
                     <i class="fas fa-bookmark"></i>
-                    Stateful and Stateless Components
+                    Container and Presentational Components
                 </div>
                 <div class="api-description">
-                    How React Components are categorized.
+                    Deeper dive into Container and Presentational Components
                 </div>
             </div>
         </a>
