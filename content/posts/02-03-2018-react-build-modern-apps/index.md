@@ -129,7 +129,7 @@ React is a JavaScript library for building User Interfaces. A few reasons to bui
     </div>
 </div>
 
-## Conclusions
+## Conclusion
 
 In this series we are going to explore how to create a real world React application. A github repository is available with application's code. In the end of the tutorial you will be able to build a real world application.
 

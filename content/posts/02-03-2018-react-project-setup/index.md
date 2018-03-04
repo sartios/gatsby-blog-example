@@ -126,9 +126,9 @@ my-app
 The project structure I described above is pretty extensible and can fit well in React world. Next, I am going to describe JSX and the rendering process of your components.
 
 <div class="post-btns-container">
-<a class="btn-flatmaterial" href="/react-build-modern-apps">
+<a class="btn-flatmaterial" href="/react-primer">
   <i class="fas fa-angle-left"></i>
-  Back to main
+  React Primer
 </a>
 <a class="btn-material next-btn" href="/">
   JSX and Rendering
