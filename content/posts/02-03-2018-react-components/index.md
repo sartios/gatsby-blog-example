@@ -225,6 +225,65 @@ class MyComponent extends React.Component {
 }
 ```
 
+## Case Study: Create An Instagram Clone
+
+We are going to create an Instagram clone as an example of how to use components.
+
+The structure will be the following:
+
+```
+my-app
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── components
+    │    ├── app
+    │    │    ├── app.css
+    │    │    ├── app.js
+    │    │    ├── app.test.js
+    │    │    └── index.js
+    │    └── ui
+    │         └── card
+    │              ├── card.js
+    │              ├── card.css
+    │              └── index.js
+    ├── screens
+    │    └── wallScreen
+    │        ├── components
+    │        │    └── post
+    │        │        ├── like
+    │        │        │    ├── like.js
+    │        │        │    ├── like.css
+    │        │        │    └── index.js
+    │        │        ├── comment
+    │        │        │    ├── comment.js
+    │        │        │    ├── comment.css
+    │        │        │    └── index.js
+    │        │        ├── body
+    │        │        │    ├── body.js
+    │        │        │    ├── body.css
+    │        │        │    └── body.js
+    │        │        ├── post.js
+    │        │        ├── post.css
+    │        │        └── index.js
+    │        │
+    │        ├── state
+    │        ├── wallScreen.css
+    │        └── wallScreen.js
+    ├── state
+    ├── index.css
+    ├── index.js
+    └── registerServiceWorker.js
+```
+
+The code is available at the following <a class="btn-flatmaterial" href="https://github.com/sartios/react-app-example/tree/react-instagram-clone" target="_blank"><i class="fab fa-github-alt"></i>GitHub Repo</a>
+
 ## Conclusion
 
 React components can be either stateless or stateful. Stateful is a good fit for custom lifecycle methods implementations and internal state. Stateless is a good fit when you need only the render method implementation.
