@@ -288,7 +288,7 @@ The code is available at the following <a class="btn-flatmaterial" href="https:/
 
 React components can be either stateless or stateful. Stateful is a good fit for custom lifecycle methods implementations and internal state. Stateless is a good fit when you need only the render method implementation.
 
-Next, we are going to explore React Components in details.
+Next, we are going to investigate Container and Presentational Components.
 
 <div class="post-btns-container">
 <a class="btn-flatmaterial" href="/react-jsx-and-rendering">
