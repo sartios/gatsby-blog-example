@@ -2,8 +2,8 @@
 title: "React Components"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "01-03-2018"
-category: "draft"
-description: "introduction to react framework"
+category: "front-end"
+description: "how to create react components"
 tags:
     - programming
     - front-end
@@ -249,9 +249,17 @@ my-app
     │    │    ├── app.test.js
     │    │    └── index.js
     │    └── ui
-    │         └── card
-    │              ├── card.js
-    │              ├── card.css
+    │         ├── card
+    │         │     ├── card.js
+    │         │     ├── card.css
+    │         │     └── index.js
+    │         ├── column
+    │         │     ├── column.js
+    │         │     ├── column.css
+    │         │     └── index.js
+    │         └── screen
+    │              ├── screen.js
+    │              ├── screen.css
     │              └── index.js
     ├── screens
     │    └── wallScreen
@@ -261,14 +269,9 @@ my-app
     │        │        │    ├── like.js
     │        │        │    ├── like.css
     │        │        │    └── index.js
-    │        │        ├── comment
-    │        │        │    ├── comment.js
-    │        │        │    ├── comment.css
+    │        │        ├── user
+    │        │        │    ├── user.js
     │        │        │    └── index.js
-    │        │        ├── body
-    │        │        │    ├── body.js
-    │        │        │    ├── body.css
-    │        │        │    └── body.js
     │        │        ├── post.js
     │        │        ├── post.css
     │        │        └── index.js
@@ -283,6 +286,16 @@ my-app
 ```
 
 The code is available at the following <a class="btn-flatmaterial" href="https://github.com/sartios/react-app-example/tree/react-instagram-clone" target="_blank"><i class="fab fa-github-alt"></i>GitHub Repo</a>
+
+**Explaining the code**
+
+* src/components/ui - the generic UI components live here. Now we need a screen, a column, and a card, but in the future maybe we are going to create a button, an input, etc.
+
+* src/screens/wallScreen - the wall screen components live here.
+
+* src/screens/wallScreen/components/post - we have created a post component for the needs of wall screen.
+
+As you can see in the code, most of the components are functional. The only component that is class-based is the Like because it needs to maintain an internal state.
 
 ## Conclusion
 
