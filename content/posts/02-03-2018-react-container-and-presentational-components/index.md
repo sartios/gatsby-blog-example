@@ -45,12 +45,12 @@ The pattern of container components offers separation of concerns and reusabilit
 Next, we are going to explore how to integrate Redux into our application.
 
 <div class="post-btns-container">
-<a class="btn-flatmaterial" href="/s">
+<a class="btn-flatmaterial" href="/react-components">
   <i class="fas fa-angle-left"></i>
-  Back to blogs
+  React Components
 </a>
-<a class="btn-material next-btn" href="/react-primer">
-  React Primer
+<a class="btn-material next-btn" href="/react-complex-state-management">
+  React Complex State Management
   <i class="fas fa-angle-right"></i>
 </a>
 </div>
