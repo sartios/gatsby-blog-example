@@ -276,10 +276,11 @@ my-app
     │        │        ├── post.css
     │        │        └── index.js
     │        │
-    │        ├── state
+    │        │
     │        ├── wallScreen.css
     │        └── wallScreen.js
     ├── state
+    |   └── wall
     ├── index.css
     ├── index.js
     └── registerServiceWorker.js
