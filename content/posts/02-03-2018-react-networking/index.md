@@ -124,16 +124,15 @@ Handling network traffic with React can be done with isomorphic-fetch. In order 
 
 Async actions have to handle at least 3 stages, **request**, **success** and **error**.
 
-This is the end of this tutorial.
-
-Share if you liked it!
+Next, you are going to explore how to implement client side routing.
 
 <div class="post-btns-container">
-<a class="btn-flatmaterial" href="/react-routing">
+<a class="btn-flatmaterial" href="/react-complex-state-management">
   <i class="fas fa-angle-left"></i>
-  React Routing
+  React Complex State Management
 </a>
-<a class="btn-material next-btn" href="/react-build-modern-apps">
-  React Build Modern Apps
+<a class="btn-material next-btn" href="/react-routing">
+  React Routing
+  <i class="fas fa-angle-right"></i>
 </a>
 </div>

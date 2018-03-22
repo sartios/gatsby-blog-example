@@ -95,15 +95,16 @@ For a deep dive into the full features you can read <a class="link-flatmaterial"
 React Router v4
 </a>
 
-Next, we are going to explore how to interact with API Endpoints.
+This is the end of the tutorial.
+
+Share if you liked it!
 
 <div class="post-btns-container">
-<a class="btn-flatmaterial" href="/react-complex-state-management">
+<a class="btn-flatmaterial" href="/react-networking">
   <i class="fas fa-angle-left"></i>
-  React Complex State Management
-</a>
-<a class="btn-material next-btn" href="/react-networking">
   React Networking
-  <i class="fas fa-angle-right"></i>
+</a>
+<a class="btn-material next-btn" href="/react-build-modern-apps">
+  React Build Modern Apps
 </a>
 </div>

@@ -1,5 +1,5 @@
 ---
-title: "React Components"
+title: "React Components Tutorial"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "01-03-2018"
 category: "front-end"

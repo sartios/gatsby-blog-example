@@ -130,7 +130,7 @@ The project structure I described above is pretty extensible and can fit well in
   <i class="fas fa-angle-left"></i>
   React Primer
 </a>
-<a class="btn-material next-btn" href="/">
+<a class="btn-material next-btn" href="/react-jsx-and-rendering">
   JSX and Rendering
   <i class="fas fa-angle-right"></i>
 </a>

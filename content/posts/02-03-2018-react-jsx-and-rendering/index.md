@@ -96,7 +96,7 @@ Next, we are going to explore React Components in details.
   <i class="fas fa-angle-left"></i>
   Project Setup
 </a>
-<a class="btn-material next-btn" href="/react-components">
+<a class="btn-material next-btn" href="/react-components-tutorial">
   React Components
   <i class="fas fa-angle-right"></i>
 </a>

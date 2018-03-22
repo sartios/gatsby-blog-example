@@ -283,8 +283,8 @@ Next, we are going to explore how to navigate in the app using React Router.
   <i class="fas fa-angle-left"></i>
   Container and Presentational Components
 </a>
-<a class="btn-material next-btn" href="/react-routing">
-  React Routing
+<a class="btn-material next-btn" href="/react-networking">
+  React Networking
   <i class="fas fa-angle-right"></i>
 </a>
 </div>

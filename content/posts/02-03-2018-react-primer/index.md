@@ -107,7 +107,7 @@ In next chapter, I am going to propose a folder structure for the application.
   <i class="fas fa-angle-left"></i>
   Back to main
 </a>
-<a class="btn-material next-btn" href="/">
+<a class="btn-material next-btn" href="/react-project-setup">
   Project Structure
   <i class="fas fa-angle-right"></i>
 </a>
