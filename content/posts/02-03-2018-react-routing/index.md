@@ -83,3 +83,27 @@ React Router v4 exports a Link component which can be used to accomplish navigat
 Using traditional anchor links will cause a page reload instead of just updating the URL.
 
 ## Conclusion
+
+React Router v4 can be used to implement client side routing.
+
+Router has been integrated in the application in the following <a class="link-flatmaterial" href="https://github.com/sartios/react-app-example/tree/react-project-structure" target="_blank">
+<i class="fab fa-github-alt"></i>
+GitHub Repo
+</a>
+
+For a deep dive into the full features you can read <a class="link-flatmaterial" href="/react-router-v4" target="_blank">
+React Router v4
+</a>
+
+Next, we are going to explore how to interact with API Endpoints.
+
+<div class="post-btns-container">
+<a class="btn-flatmaterial" href="/react-complex-state-management">
+  <i class="fas fa-angle-left"></i>
+  React Complex State Management
+</a>
+<a class="btn-material next-btn" href="/react-networking">
+  React Networking
+  <i class="fas fa-angle-right"></i>
+</a>
+</div>
