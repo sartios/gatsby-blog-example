@@ -70,7 +70,7 @@ The following workflow is what takes place when the view dispatches an action un
 8. The Store informs the View-Bindings that state has been modified.
 9. The View-Bindings receive the new state and re-render.
 
-Further reading <a class="btn-flatmaterial" href="/redux-api">Redux API</a>
+Further reading <a class="link-flatmaterial" href="/redux-api">Redux API</a>
 
 ## Integration Steps
 
@@ -270,7 +270,7 @@ WallScreen.defaultProps = {
 export default WallScreen;
 ```
 
-The code is available at the following <a class="btn-flatmaterial" href="https://github.com/sartios/react-app-example/tree/integrate-redux" target="_blank"><i class="fab fa-github-alt"></i>GitHub Repo</a>
+The code is available at the following <a class="link-flatmaterial" href="https://github.com/sartios/react-app-example/tree/integrate-redux" target="_blank"><i class="fab fa-github-alt"></i>GitHub Repo</a>
 
 ## Conclusion
 

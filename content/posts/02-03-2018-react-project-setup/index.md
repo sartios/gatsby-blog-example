@@ -116,7 +116,7 @@ my-app
 * Folder screens - contains all the available screens.
 * Folder state - contains the state of the current level.
 
-<a class="btn-flatmaterial" href="https://github.com/sartios/react-app-example/tree/react-project-structure" target="_blank">
+<a class="link-flatmaterial" href="https://github.com/sartios/react-app-example/tree/react-project-structure" target="_blank">
   <i class="fab fa-github-alt"></i>
   GitHub Repo
 </a>

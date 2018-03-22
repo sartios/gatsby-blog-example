@@ -207,3 +207,58 @@ pre.language-jsx .language-javascript span.token.punctuation {
   background-color: #8e44ad;
   color: #ecf0f1;
 }
+
+/**
+ ***************************************************
+ ****************** LINKS **************************
+ ***************************************************
+*/
+
+.link-flatmaterial {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+  transition: all 0.25s ease;
+  color: inherit;
+}
+
+.link-flatmaterial:hover {
+  color: #9b59b6;
+}
+
+.link-flatmaterial:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  content: "";
+  transition: width 0s ease, background 0.5s ease;
+}
+
+.link-flatmaterial:hover:before {
+  width: 100%;
+  transition: width 0.5s ease;
+  background: #9b59b6;
+}
+
+.link-flatmaterial:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  content: "";
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+  background: #34495e;
+}
+
+.link-flatmaterial:hover:after {
+  width: 100%;
+  transition: all 0s ease;
+  background: transparent;
+}

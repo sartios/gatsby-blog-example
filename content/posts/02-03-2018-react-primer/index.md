@@ -91,7 +91,7 @@ In the following example, we are going to create a very simple application that 
 
 Our component is created using React.createElement method and is rendered into the container using ReactDOM.render method.
 
-<a class="btn-flatmaterial" href="https://github.com/sartios/react-app-example/tree/react-primer" target="_blank">
+<a class="link-flatmaterial" href="https://github.com/sartios/react-app-example/tree/react-primer" target="_blank">
   <i class="fab fa-github-alt"></i>
   GitHub Repo
 </a>

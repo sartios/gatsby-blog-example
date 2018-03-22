@@ -286,7 +286,7 @@ my-app
     └── registerServiceWorker.js
 ```
 
-The code is available at the following <a class="btn-flatmaterial" href="https://github.com/sartios/react-app-example/tree/react-instagram-clone" target="_blank"><i class="fab fa-github-alt"></i>GitHub Repo</a>
+The code is available at the following <a class="link-flatmaterial" href="https://github.com/sartios/react-app-example/tree/react-instagram-clone" target="_blank"><i class="fab fa-github-alt"></i>GitHub Repo</a>
 
 **Explaining the code**
 
