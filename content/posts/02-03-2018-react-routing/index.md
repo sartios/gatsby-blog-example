@@ -2,7 +2,7 @@
 title: "React Routing"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "01-03-2018"
-category: "draft"
+category: "front-end"
 description: "how to use react router"
 tags:
     - programming

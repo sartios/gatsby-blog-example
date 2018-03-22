@@ -2,7 +2,7 @@
 title: "React Build Modern Apps"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "01-03-2018"
-category: "draft"
+category: "main"
 description: "build modern apps with react framework"
 tags:
     - programming
