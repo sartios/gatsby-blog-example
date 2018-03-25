@@ -1,5 +1,5 @@
 ---
-title: "React Components"
+title: "React Components API"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "25-02-2018"
 category: "front-end"
@@ -16,12 +16,12 @@ Components are the basic building blocks of a React application. React is a fram
 
 React provides two basic classes which can be extended in order to create a component.
 
-* ``React.Component``
-* ``React.PureComponent``
+* `React.Component`
+* `React.PureComponent`
 
-The difference between these two classes is the implementation of ``shouldComponentUpdate`` method. On change of props or state, PureComponent will do a shallow comparison on both props and state where on the other hand Component will not do a comparison.
+The difference between these two classes is the implementation of `shouldComponentUpdate` method. On change of props or state, PureComponent will do a shallow comparison on both props and state where on the other hand Component will not do a comparison.
 
-A class component can have ``props``, ``state`` and its own implementation of the ``lifecycle`` methods available to React components. Props is a set of read-only properties passed from the parent where state is a set of internal properties maintained by the component itself. As for the lifecycle methods, the ``render()`` method must be implemented because it is required.
+A class component can have `props`, `state` and its own implementation of the `lifecycle` methods available to React components. Props is a set of read-only properties passed from the parent where state is a set of internal properties maintained by the component itself. As for the lifecycle methods, the `render()` method must be implemented because it is required.
 
 <style>
   .api-container {
@@ -239,7 +239,7 @@ export default MyComponent;
 
 ## Functional Components
 
-Functional components is a pure JavaScript function which takes as arguments the props set. Actually, it is only the implementation of the ``render()`` method and can not have internal state or implementations of the rest lifecycle methods.
+Functional components is a pure JavaScript function which takes as arguments the props set. Actually, it is only the implementation of the `render()` method and can not have internal state or implementations of the rest lifecycle methods.
 
 ### Example
 
@@ -288,22 +288,22 @@ export default MyComponent;
 As said in the introduction, components are the building blocks of a React application. But how do you compose all the components together in order to build the application? First you have to import the component where you want to use it and then you can use it as a plain html tag.
 
 ```jsx
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import MyComponent from './myComponent'; // relative or absolute path to myComponent.jsx file.
+import MyComponent from "./myComponent"; // relative or absolute path to myComponent.jsx file.
 
-const MyParentComponent = (props) => (
-    <div className="parent-component-wrapper">
-        <MyComponent numProp={7} stringProp="hello friend" /> 
-    </div>
-)
+const MyParentComponent = props => (
+  <div className="parent-component-wrapper">
+    <MyComponent numProp={7} stringProp="hello friend" />
+  </div>
+);
 
 export default MyParentComponent;
 ```
 
 ## Conclusion
 
-As a conclusion I will answer the question *when to use functional components and when to use class components?*. The reason to use functional components is not the performance, because they are wrapped internally in a class, but because you do not need an internal state or to override a lifecycle hook. In case you need anything of these two, you have to go with class components.
+As a conclusion I will answer the question _when to use functional components and when to use class components?_. The reason to use functional components is not the performance, because they are wrapped internally in a class, but because you do not need an internal state or to override a lifecycle hook. In case you need anything of these two, you have to go with class components.
 
 <a href="/react-api">Back to API</a>

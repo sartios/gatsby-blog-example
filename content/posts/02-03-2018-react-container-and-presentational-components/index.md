@@ -45,7 +45,7 @@ The pattern of container components offers separation of concerns and reusabilit
 Next, we are going to explore how to integrate Redux into our application.
 
 <div class="post-btns-container">
-<a class="btn-flatmaterial" href="/react-components-tutorial">
+<a class="btn-flatmaterial" href="/react-components">
   <i class="fas fa-angle-left"></i>
   React Components
 </a>

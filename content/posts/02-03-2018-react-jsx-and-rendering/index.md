@@ -10,23 +10,31 @@ tags:
     - react
 ---
 
-JSX is a statically-typed, object-oriented programming language that compiles to JavaScript. In React, JSX provides syntactic sugar for `React.createElement(component, props, ...children)` function and Babel takes care about compiling.
+JSX is a statically-typed, object-oriented programming language that compiles to JavaScript. In React, JSX provides syntactic sugar for `React.createElement(component, props, ...children)` function and Babel takes care the compilation.
 
 It's recommended to use JSX to describe your UI components.
 
-React puts HTML into JavaScript with JSX. This approach has many benefits:
+### HTML into JavaScript
+
+React puts HTML into JavaScript with JSX.
+
+#### Benefits
 
 **Compile-time Errors**
 
-JSX will be compiled to JavaScript. Making a typo error in JSX, it won't compile. Forgot to close a div tag? The compiler will give you feedback about it.
+JSX will be compiled to JavaScript. Making a typo error in JSX, it won't compile.
+
+Forgot to close a div tag? The compiler will give you feedback about it.
 
 **Power of JavaScript**
 
-You can enjoy all the power of JavaScript when working with your markup. Looping or conditional logic with your markup do not require extra tags, just simple JavaScript.
+You can enjoy all the power of JavaScript when working with your markup.
+
+Looping or conditional logic with your markup do not require extra tags, just simple JavaScript.
 
 ## JSX
 
-Now that we know the benefits of JSX, let's describe JSX in depth:
+Now that you know the benefits of JSX, let's describe JSX in depth:
 
 * JSX looks like HTML:
 
@@ -89,14 +97,14 @@ const element = <div>{isLoggedIn ? <div>Hello User</div> : null}</div>;
 
 JSX brings HTML into JavaScript and you can use plain JavaScript to accomplish conditional rendering and looping.
 
-Next, we are going to explore React Components in details.
+Next, you are going to explore React Components in details.
 
 <div class="post-btns-container">
 <a class="btn-flatmaterial" href="/react-project-setup">
   <i class="fas fa-angle-left"></i>
   Project Setup
 </a>
-<a class="btn-material next-btn" href="/react-components-tutorial">
+<a class="btn-material next-btn" href="/react-components">
   React Components
   <i class="fas fa-angle-right"></i>
 </a>

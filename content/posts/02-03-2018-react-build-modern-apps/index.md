@@ -10,15 +10,15 @@ tags:
     - react
 ---
 
-In this series of articles we are going to explore how to build a modern app with React Framework.
+In this series of posts, you are going to explore how to build a modern app with React Framework. At the end of this tutorial, you will have built an Instagram clone.
 
-React is a JavaScript library for building User Interfaces. A few reasons to build a UI using React are the following:
+React is a JavaScript library for building User Interfaces. Reasons to build a UI using React:
 
 * Optimized rendering performance.
 * SEO friendly.
 * Testable UI.
 * Code reusability with components.
-* Fast on large amount of data and components.
+* Fast on a large amount of data and components.
 
 ## Contents
 
@@ -131,7 +131,7 @@ React is a JavaScript library for building User Interfaces. A few reasons to bui
 
 ## Conclusion
 
-In this series we are going to explore how to create a real world React application. A github repository is available with application's code. In the end of the tutorial you will be able to build a real world application.
+In this series, we are going to explore how to create a real-world React application. A GitHub repository is available with application's code. At the end of the tutorial, you will be able to build a real-world application.
 
 <div class="post-btns-container">
 <a class="btn-flatmaterial" href="/s">

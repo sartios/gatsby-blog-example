@@ -10,13 +10,13 @@ tags:
     - react
 ---
 
-Before you start crafting your application, you have to setup a system to compile and bundle your files. In React world, the preferred tools are Babel for compile ES6 to plain JavaScript and Webpack for bundling the files.
+A system to compile and bundle your files should be configured before you start crafting your application. Babel will take care the compilation of ES6 to plain JavaScript and Webpack the bundling of the files.
 
 ## Babel
 
 Babel is a JavaScript compiler that can compile ES6 and JSX into plain JavaScript that the browser can understand.
 
-You can write React components without ES6 and JSX but it is hard and does not worth the effort.
+You can write React components without ES6 and JSX but it is hard and not easily maintainable.
 
 Integrating Babel with Webpack will compile your ES6/JSX components to plain JavaScript functions at building process.
 
@@ -24,7 +24,7 @@ Integrating Babel with Webpack will compile your ES6/JSX components to plain Jav
 
 Webpack is a module bundler which takes modules with dependencies and generates static asses by bundling them together based on some configuration.
 
-At the minimum, you want to use webpack in order to bundle all your JavaScript files into one file, all your CSS files into another file and link them to the HTML that you will send to the browser.
+At the minimum, Webpack will bundle all your JavaScript files into one file, all your CSS files into another file and link them to the HTML that you will send to the browser.
 
 ```html
 <html>
@@ -40,9 +40,9 @@ At the minimum, you want to use webpack in order to bundle all your JavaScript f
 
 ## create-react-app
 
-Babel and Webpack need configuration files in order to do their tasks. But most of the React projects have the same configuration.
+Babel and Webpack need configuration files in order to accomplish their tasks, but most React projects have the same configuration.
 
-`create-react-app` is a great tool that generates a React project with an optimized configuration for Babel and Webpack. In addition, it provides the option to `eject` the configuration and extend it as you like.
+`create-react-app` provides the configuration out of the box and generates a React project. It has the `eject` command that allows you to extend this configuration.
 
 **Installation**
 
@@ -54,7 +54,7 @@ Babel and Webpack need configuration files in order to do their tasks. But most 
 * cd my-app
 * create-react-app .
 
-The folder structure that it will create is the following:
+The generated folder structure is the following:
 
 ```
 my-app
@@ -78,9 +78,9 @@ my-app
 
 ## Folder Structure
 
-We are going to alter the initial structure that create-react-app generated. Specifically, we are going to modify src folder.
+For the Instagram clone example, the generated structure will be altered.
 
-I suggest a structure that works for applications that have some screens and in these screens they display components.
+The application will be screen-based, it will display screens that render components.
 
 ```
 my-app
@@ -123,7 +123,7 @@ my-app
 
 ## Conclusion
 
-The project structure I described above is pretty extensible and can fit well in React world. Next, I am going to describe JSX and the rendering process of your components.
+The described project structure is pretty extensible and can fit well in React world. Next, you are going to explore JSX and the rendering process of your components.
 
 <div class="post-btns-container">
 <a class="btn-flatmaterial" href="/react-primer">

@@ -1,5 +1,5 @@
 ---
-title: "React Components Tutorial"
+title: "React Components"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "01-03-2018"
 category: "front-end"
@@ -10,13 +10,11 @@ tags:
     - react
 ---
 
-Components are the basic building blocks of a React application.
+Components are the basic building blocks of a React application. The components-based approach lets you split the UI into independent components, think about a UI part in isolation and increases reusability.
 
-A React component describes what you want to see on the screen. You can split the UI into independent components, think about it in isolation and reuse it in your application.
+A React component describes what you want to see on the screen. Internally, a component is an object representation in VirtualDOM of an actual DOM node.
 
-Do you remember VirtualDOM? Internally, a component is an object representation in VirtualDOM of an actual DOM node.
-
-We are going to implement our components using ES6 and JSX.
+It is recommended to implement components using ES6 and JSX.
 
 ## Imports
 
@@ -24,7 +22,7 @@ The required import in a component is the React entry point. In order the JSX co
 
 `import React from 'react';`
 
-The styles of the component can be imported as well if you implemented in an external CSS file.
+The styles of the component can be imported as well if are implemented in an external CSS file.
 
 `import './myComponent.css'`
 
@@ -34,7 +32,7 @@ Other components can be imported as well.
 
 ## Components
 
-A component can be implemented as a function or as a class component. Both of this two implementations have props in common.
+A component can be implemented as a function or as a class component. Both of the two implementations have props in common.
 
 Props is a set of read-only properties passed from the parent. A component should describe the types of the props and default values in case of not required props.
 
@@ -225,7 +223,7 @@ class MyComponent extends React.Component {
 }
 ```
 
-## Case Study: Create An Instagram Clone
+## Instagram Clone Components
 
 We are going to create an Instagram clone as an example of how to use components.
 
@@ -302,7 +300,7 @@ As you can see in the code, most of the components are functional. The only comp
 
 React components can be either stateless or stateful. Stateful is a good fit for custom lifecycle methods implementations and internal state. Stateless is a good fit when you need only the render method implementation.
 
-Next, we are going to investigate Container and Presentational Components.
+Next, you are going to explore Container and Presentational Components.
 
 <div class="post-btns-container">
 <a class="btn-flatmaterial" href="/react-jsx-and-rendering">

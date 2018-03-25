@@ -10,15 +10,23 @@ tags:
     - react
 ---
 
-React allows us to store state in the components and provides `setState` and `this.state` to read and write.
+React allows you to store state in the components and provides `setState` and `this.state` to read and write.
 
 Keeping the state internal to components causes scalability and maintainability issues.
 
+**Sharing the state**
+
 The internal state is not sharable between components. If more that one component needs the same part of the internal state, you have to define workarounds in order to share and keep the internal state updated.
+
+**Props drilling**
 
 Parents can pass to their children data through props and you can use this technique to pass down parents' internal state. In cases that the children do not need the state but their nested children then we cause props drilling.
 
+**Caching**
+
 The internal state cannot be cached out of the box. Because it lives inside the components on unmount it will be lost. In order to maintain it on unmount you have to define workarounds to send it around on unmounts.
+
+**Separation of concerns**
 
 Internal state lacks separation of concerns because you have to define and maintain the components a mechanism to pass the state around.
 
