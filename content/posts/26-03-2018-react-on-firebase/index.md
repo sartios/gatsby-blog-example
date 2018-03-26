@@ -17,7 +17,20 @@ Firebase is a cloud platform that gives you functionality like analytics, databa
 ## Contents
 
 <div class="api-container">
-  <div class="api-item-container">
+    <div class="api-item-container">
+        <a class="api-link" href="/firebase-authentication">
+            <div class="api-item">
+                <div>
+                    <i class="fas fa-bookmark"></i>
+                    Console Setup
+                </div>
+                <div class="api-description">
+                    Setup account on Firebase.
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="api-item-container">
         <a class="api-link" href="/firebase-authentication">
             <div class="api-item">
                 <div>
