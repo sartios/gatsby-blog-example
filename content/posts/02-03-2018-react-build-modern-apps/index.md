@@ -10,6 +10,8 @@ tags:
     - react
 ---
 
+<img src="./image.png" />
+
 In this series of posts, you are going to explore how to build a modern app with React Framework. At the end of this tutorial, you will have built an Instagram clone.
 
 React is a JavaScript library for building User Interfaces. Reasons to build a UI using React:
