@@ -1,5 +1,9 @@
 {
-	"devDependencies": {
-		"lerna": "^2.10.2"
-	}
+  "scripts": {
+    "start": "lerna exec --scope=@sartios/blog -- yarn dev"
+  },
+  "devDependencies": {
+    "lerna": "^2.10.2"
+  },
+  "workspaces": ["packages/*"]
 }
