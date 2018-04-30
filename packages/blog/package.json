@@ -1,6 +1,7 @@
 {
-  "name": "sartios-blog",
-  "description": "Tutorials, guides and blogs on React, D3, JavaScript, front-end development",
+  "name": "@sartios/blog",
+  "description":
+    "Tutorials, guides and blogs on React, D3, JavaScript, front-end development",
   "version": "0.0.1",
   "author": "Sartios Savramis <sartios@hotmail.com>",
   "dependencies": {
@@ -51,9 +52,7 @@
     "stylelint-config-standard": "^18.0.0",
     "write-good": "^0.11.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -71,8 +70,6 @@
     "format:js": "prettier '**/*.{js,jsx}' --write"
   },
   "remarkConfig": {
-    "plugins": [
-      "remark-preset-lint-recommended"
-    ]
+    "plugins": ["remark-preset-lint-recommended"]
   }
 }
