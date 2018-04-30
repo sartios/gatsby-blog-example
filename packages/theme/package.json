@@ -1,0 +1,10 @@
+{
+  "name": "@sartios/blog-theme",
+  "version": "0.0.1",
+  "description": "Custom theme for the blog",
+  "main": "build/index.js",
+  "scripts": {},
+  "keywords": ["theme", "material", "react"],
+  "author": "sartios <sartios@hotmail.com>",
+  "license": "ISC"
+}
