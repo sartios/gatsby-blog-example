@@ -1,9 +1,14 @@
 {
+  "name": "@sartios/gatsby-blog",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Gatsby blog for React",
+  "keywords": ["react", "firebase", "lerna", "d3"],
+  "author": "sartios <sartios@hotmail.com>",
   "scripts": {
     "start": "lerna exec --scope=@sartios/blog -- yarn dev"
   },
   "devDependencies": {
     "lerna": "^2.10.2"
-  },
-  "workspaces": ["packages/*"]
+  }
 }
