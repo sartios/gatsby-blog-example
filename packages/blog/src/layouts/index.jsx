@@ -1,13 +1,10 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import Container from './components/container/container';
-import Sidebar from './components/sidebar/sidebar';
-import Header from './components/header/header';
-import Grid from './components/grid/grid';
-import Main from './components/main/main';
-import Navigation from '../components/shared/navigation';
-import Avatar from '../components/shared/avatar';
+import { Container, Sidebar, Header, Grid, Main } from "@sartios/blog-theme";
+
+import Navigation from "../components/shared/navigation";
+import Avatar from "../components/shared/avatar";
 
 import config from "../../data/SiteConfig";
 import "./index.css";
@@ -47,10 +44,10 @@ export default class MainLayout extends React.Component {
     }
     return title;
   }
-  
+
   render() {
     const { children } = this.props;
-    
+
     return (
       <Container>
         <Helmet>
@@ -63,9 +60,7 @@ export default class MainLayout extends React.Component {
             <Avatar />
             <Navigation currentPath={this.props.location.pathname} />
           </Sidebar>
-          <Main>
-            {children()}
-          </Main>
+          <Main>{children()}</Main>
         </Grid>
       </Container>
     );

@@ -6,7 +6,7 @@
   "main": "build/index.js",
   "scripts": {
     "prepare:build": "mkdir build",
-    "clean": "rimraf build",
+    "clean": "rmdir build /s /q",
     "build": "babel -d build src",
     "deploy": "npm run clean && npm run prepare:build && npm run build",
     "watch": "babel -d build src --watch",
