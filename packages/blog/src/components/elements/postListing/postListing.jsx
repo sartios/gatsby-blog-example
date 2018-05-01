@@ -5,11 +5,9 @@ import Link from "gatsby-link";
 import { Post } from "@sartios/blog-theme";
 
 const PostContainer = styled.div`
-  border: 1px solid rgba(38, 41, 58, 0.1);
   width: calc(33.33% - 2 * 40px / 3);
   display: inline-block;
   margin: 10px;
-  padding: 24px;
   background-color: #ecf0f1;
 
   a {
@@ -48,12 +46,9 @@ class PostListing extends React.Component {
     this.props.postEdges.forEach(postEdge => {
       postList.push({
         path: postEdge.node.fields.slug,
-        tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
-        date: postEdge.node.frontmatter.date,
-        excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead
+        excerpt: postEdge.node.excerpt
       });
     });
     return postList;
@@ -63,11 +58,10 @@ class PostListing extends React.Component {
 
     return (
       <Container>
-        {/* Your post list here. */
-        postList.map(post => (
+        {postList.map(post => (
           <PostContainer>
-            <Link>
-              <Post data={post} />
+            <Link to={post.path}>
+              <Post {...post} />
             </Link>
           </PostContainer>
         ))}
