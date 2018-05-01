@@ -1,6 +1,6 @@
 ---
 title: "ReactDOM API"
-cover: "https://unsplash.it/400/300/?random?BoldMage"
+cover: "https://sartios.com/images/react-dom-api.png"
 date: "27-02-2018"
 category: "main"
 description: "reactdom api overview"
