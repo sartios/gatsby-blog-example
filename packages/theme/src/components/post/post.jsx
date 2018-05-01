@@ -3,8 +3,7 @@ import styled from "styled-components";
 
 const Cover = styled.img`
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  vertical-align: middle;
 `;
 
 const Description = styled.div`
@@ -13,7 +12,9 @@ const Description = styled.div`
 
 const Post = props => (
   <div className="post-item">
-    <Cover src={props.cover} />
+    <div>
+      <Cover src={props.cover} />
+    </div>
     <Description>
       <h3>{props.title}</h3>
       <p>{props.excerpt}</p>
