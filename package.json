@@ -6,7 +6,8 @@
   "keywords": ["react", "firebase", "lerna", "d3"],
   "author": "sartios <sartios@hotmail.com>",
   "scripts": {
-    "start": "lerna exec --scope=@sartios/blog -- yarn dev"
+    "start": "lerna exec --scope=@sartios/blog -- yarn dev",
+    "deploy": "lerna exec --scope=@sartios/blog -- yarn build:prod"
   },
   "devDependencies": {
     "lerna": "^2.10.2"
