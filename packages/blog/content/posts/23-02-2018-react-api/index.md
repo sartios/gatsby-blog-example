@@ -1,6 +1,6 @@
 ---
 title: "React API"
-cover: "https://unsplash.it/400/300/?random?BoldMage"
+cover: "https://sartios.com/images/react-api.png"
 date: "23-02-2018"
 category: "main"
 description: "React API. An overview of the React API."
