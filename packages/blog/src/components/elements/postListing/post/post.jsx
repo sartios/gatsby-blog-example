@@ -1,25 +1,27 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import Link from "gatsby-link";
+
+import { Post as PostMeta } from "@sartios/blog-theme";
 
 /**
  * Component to display a post inside a list.
  */
 const Post = props => {
   const Container = styled.div`
-    border: 1px solid rgba(38,41,58,0.1);
+    border: 1px solid rgba(38, 41, 58, 0.1);
     width: calc(33.33% - 2 * 40px / 3);
     display: inline-block;
     margin: 10px;
     padding: 24px;
-    background-color: #ECF0F1;
+    background-color: #ecf0f1;
 
     a {
       text-decoration: none;
-      color: rgba(38,41,58,1);
+      color: rgba(38, 41, 58, 1);
 
       &:active {
-        color: rgba(38,41,58,0.6);
+        color: rgba(38, 41, 58, 0.6);
       }
     }
 
@@ -32,34 +34,16 @@ const Post = props => {
       margin-right: 0;
       margin-bottom: 0;
     }
-  `
-
-  const PostMeta = styled.div`
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    color: rgba(38,41,58,0.6);
-
-    span {
-      margin: 4px 12px 0;
-    }
-  `  
+  `;
 
   return (
     <Container>
       <Link to={props.data.path}>
-        <PostMeta>
-          <i className="fab fa-react" style={{color: '#3498DB'}} />
-          <span>{props.data.date}</span>
-          &#9679;
-          <span>{props.data.timeToRead} min</span>
-        </PostMeta>
-        <h2>{props.data.title}</h2>
-        <p>{props.data.excerpt}</p>
+        <PostMeta data={props.data} />
       </Link>
     </Container>
-  )
-}
+  );
+};
 
 const { number, string, shape, array } = React.PropTypes;
 
@@ -89,6 +73,6 @@ Post.propTypes = {
      */
     date: string
   })
-}
+};
 
 export default Post;
