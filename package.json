@@ -7,7 +7,8 @@
   "author": "sartios <sartios@hotmail.com>",
   "scripts": {
     "start": "lerna exec --scope=@sartios/blog -- yarn dev",
-    "deploy": "lerna exec --scope=@sartios/blog -- yarn build:prod"
+    "deploy": "lerna exec --scope=@sartios/blog -- yarn build:prod",
+    "watch:theme": "lerna exec --scope=@sartios/blog-theme -- yarn watch"
   },
   "devDependencies": {
     "lerna": "^2.10.2"
