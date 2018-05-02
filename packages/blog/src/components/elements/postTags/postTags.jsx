@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import _ from "lodash";
 import Link from "gatsby-link";
-import styled from 'styled-components';
+import styled from "styled-components";
+
+import { Tag } from "@sartios/blog-theme";
 
 class PostTags extends Component {
   render() {
@@ -9,15 +11,8 @@ class PostTags extends Component {
 
     const TagsContainer = styled.div`
       display: flex;
-    `
+    `;
 
-    const Tag = styled.div`
-      border: 1px solid lightgray;
-      padding: 5px;
-      margin-right: 5px;
-      border-radius: 5px;
-    `
-    
     return (
       <TagsContainer>
         {tags &&
@@ -27,7 +22,7 @@ class PostTags extends Component {
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <Tag>{tag}</Tag>
+              <Tag value={tag} />
             </Link>
           ))}
       </TagsContainer>

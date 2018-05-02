@@ -1,6 +1,6 @@
 ---
 title: "D3 Introduction"
-cover: "https://unsplash.it/400/300/?random?BoldMage"
+cover: "https://sartios.com/images/d3-introduction.png"
 date: "18-02-2018"
 category: "main"
 tags:
