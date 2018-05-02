@@ -5,3 +5,4 @@ export { default as Header } from "./components/layout/header/header";
 export { default as Main } from "./components/layout/main/main";
 export { default as Sidebar } from "./components/layout/sidebar/sidebar";
 export { default as Post } from "./components/post/post";
+export { default as Tag } from "./components/tag/tag";
